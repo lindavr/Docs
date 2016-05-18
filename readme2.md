@@ -147,31 +147,19 @@ Once you've configured your GitHub account, installed a client Git tool (such as
 
 General guidance:
 
-- [Content channel guidance](/ContributorGuide/content-channel-guidance.md)
-
 - [Style and voice](style-and-voice.md)
-
 - [Feedback, comments, and support](feedback-and-comments.md)
-
 
 Authoring articles: tools, processes, guidance :
 
 - [Tools and setup for authoring in GitHub](tools-and-setup.md)
-
 - [Git commands for creating a new article or updating an existing article](git-commands-for-master.md)
-
 <!-- [Git commands for staging an article on the internal preview site](./git-commands-for-sandbox.md)-->
-
 - [File names and locations for Azure technical articles](file-names-and-locations.md)
-
 - [Linking guidelines](create-links-markdown.md/)
-
 - [Retire or rename an article](retire-or-rename-an-article.md)
-
 - [How to undo almost anything with Git (GitHub blog)](https://github.com/blog/2019-how-to-undo-almost-anything-with-git)
-
 - [Pull request etiquette and best practices for Microsoft contributors](contributor-guide-pull-request-etiquette.md)
-
 
 ## Resources
 
