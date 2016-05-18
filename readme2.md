@@ -15,6 +15,16 @@ ms.assetid: 6EFEA410-29E0-400C-A1C2-D93296DDD1DD
 
 Thank you for your interest in [docs.microsoft.com](https://docs.microsoft.com/), home of the technical content for products and services from Microsoft's Cloud and Enterprise Division!
 
+This is the main page of the Contributor Guide, which is broken into the following sections:
+
+* [How to contribute](#how-to-contribute) - covers the various ways you can contribute, not only to the content, but to the larger communities that use services and features covered by docs.microsoft.com content.
+  * [Pull Request overvew](#pull-request-overview) - since the Pull Request mechanism is a primary way in which all content contributions are made, this section provides a brief overview of the process, which sets context for the following sections.
+  * [Minor corrections: using the GitHub editor](#minor-corrections-using-the-GitHub-editor) - provides details on one of the two ways you can contribute to content, mainly for small contributions such as corrections.
+  * [Large submissions: using a fork](#large-submissions-using-a-fork) - provides details on the second way in which you can contribute to content, when you need to make more than just minor contributions, which is where the majority of the Contributor Guide is focused.
+* test
+
+## How to contribute
+
 You can contribute to docs.microsoft.com content and community in a few different ways:
 
 * **Submit feedback/questions** directly in a [docs.microsoft.com](https://docs.microsoft.com/) article. There are 2 ways of doing this, both of which require you to first sign in to Livefyre ([sign up](https://livefyre.zendesk.com/hc/en-us/articles/200329426-How-do-I-create-a-Livefyre-Account-) with an existing social account, or create a Livefyre account using a designated email address) :
@@ -25,7 +35,7 @@ You can contribute to docs.microsoft.com content and community in a few differen
 
 The remainder of this article is devoted to the last option, and provides additional detail on how you can use the GitHub Pull Request feature to make contributions. 
 
-###  Pull Request overview
+## Contributing via Pull Request
 
 GitHub is a hosting service for Git repositories, which is where docs.microsoft.com content is stored. A Git *repository* (aka: *repo*) is a conceptual container for one or more branches. A *branch* contains the actual folders/files that make up the set of content for a project. Branches and can also be used for versioning, with the 'master' branch serving as the main plan-of-record for the project.
 
