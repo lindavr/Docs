@@ -98,7 +98,10 @@ The main articles directory is found directly off the root of the repository, an
 Within the root of this directory are general articles that relate to the overall service, along with another series of subdirectories, which match the common scenarios as outlined on the main landing page for the service. For instance, the Intune "Understand & Explore" articles are in the `Understand` subdirectory, "Deploy & Use" articles are found in the `DeployUse` subdirectory, etc.  
 
 * **Article filenames:** Note that filenames use the following rules:
-    * Contain only lowercase letters, numbers, and hyphens. 
+    * Contain only lowercase letters, numbers, and hyphens. Windows operating systems are case insensitive, so if you need to rename a file's casing from upper/mixed to lower, you can use the following Git command (use the proper casing as well) :
+```
+  git mv <main-directory/scenario-directory/current-file-name.md> <main-directory/scenario-directory/new-file-name.md>
+```
     * No spaces or punctuation characters. Use the hyphens to separate words and numbers in the file name.
     * No more than 80 characters - this is a publishing system limit
     * Use action verbs that are specific, such as develop, buy, build, troubleshoot. No -ing words.
@@ -152,13 +155,12 @@ General guidance:
 
 Authoring articles: tools, processes, guidance :
 
-- [Tools and setup for authoring in GitHub](/ContributorGuide/tools-and-setup.md)
-- [Git commands for creating a new article or updating an existing article](/ContributorGuide/git-commands-for-master.md)
-- [File names and locations for Azure technical articles](/ContributorGuide/file-names-and-locations.md)
-- [Linking guidelines](/ContributorGuide/create-links-markdown.md/)
-- [Retire or rename an article](/ContributorGuide/retire-or-rename-an-article.md)
+- [Tools and setup for authoring in GitHub](./ContributorGuide/tools-and-setup.md)
+- [Git commands for creating a new article or updating an existing article](./ContributorGuide/git-commands-for-master.md)
+- [Linking guidelines](./ContributorGuide/create-links-markdown.md/)
+- [Retire or rename an article](./ContributorGuide/retire-or-rename-an-article.md)
 - [How to undo almost anything with Git (GitHub blog)](https://github.com/blog/2019-how-to-undo-almost-anything-with-git)
-- [Pull request etiquette and best practices for Microsoft contributors](/ContributorGuide/contributor-guide-pull-request-etiquette.md)
+- [Pull request etiquette and best practices for Microsoft contributors](./ContributorGuide/contributor-guide-pull-request-etiquette.md)
 
 ## Resources
 
@@ -177,9 +179,9 @@ All of the articles in this repository use [GitHub flavored Markdown](https://he
 
 - [Markdown basics](https://help.github.com/articles/getting-started-with-writing-and-formatting-on-github/) for a good reference on getting started. 
 - [GitHub Markdown Cheatsheet](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf) or our [Printable markdown cheatsheet](./media/documents/markdown-cheatsheet.pdf?raw=true) for a handy syntax reference.
-- [Create tables in Markdown](/ContributorGuide/create-tables-markdown.md) for help on table creation. 
-- [Create images in Markdown](/ContributorGuide/create-images-markdown.md) for help with using images in Markdown.
-- [Custom markdown extensions used in our technical articles - TBD](/ContributorGuide/custom-markdown-extensions.md) for details on the Markdown extensions we use for custom rendering of Note blocks, videos, etc.
+- [Create tables in Markdown](./ContributorGuide/create-tables-markdown.md) for help on table creation. 
+- [Create images in Markdown](./ContributorGuide/create-images-markdown.md) for help with using images in Markdown.
+- [Custom markdown extensions used in our technical articles - TBD](./ContributorGuide/custom-markdown-extensions.md) for details on the Markdown extensions we use for custom rendering of Note blocks, videos, etc.
 - [Markdown template for technical articles](template.md) for a template to help you get started when proposing new articles.
 - [Metadata for docs.microsoft.com articles - TBD](article-metadata.md) to learn more about the article metadata we require at the top of each article.
 
