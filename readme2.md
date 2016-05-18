@@ -99,14 +99,13 @@ Within the root of this directory are general articles that relate to the overal
 
 * **Article filenames:** Note that filenames use the following rules:
     * Contain only lowercase letters, numbers, and hyphens. Windows operating systems are case insensitive, so if you need to rename a file's casing from upper/mixed to lower, you can use the following Git command (use the proper casing as well) :
-```
-  git mv <main-directory/scenario-directory/current-file-name.md> <main-directory/scenario-directory/new-file-name.md>
-```
+
+            git mv <main-directory/scenario-directory/current-file-name.md> <main-directory/scenario-directory/new-file-name.md>
     * No spaces or punctuation characters. Use the hyphens to separate words and numbers in the file name.
     * No more than 80 characters - this is a publishing system limit
     * Use action verbs that are specific, such as develop, buy, build, troubleshoot. No -ing words.
     * No small words - don't include a, and, the, in, or, etc.
-    * Must be in Markdown and use the .md file extension.  
+    * Must be in Markdown and use the .md file extension.
 * **Media subdirectory:** As mentioned, each article directory also contains a `\media` subdirectory for corresponding media files, inside which are images used by articles that have image references.  
 * **Includes subdirectory:** Whenever we have reusable content that is shared across two or more articles, it is placed in an `includes` subdirectory off of the main articles directory. In the Markdown file that wishes to use the include file, a corresponding INCLUDE Markdown extension is placed in the location where the include file needs to be referenced.  
 
