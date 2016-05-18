@@ -57,7 +57,7 @@ Every published technical article has a comment stream provided by the [Livefyre
 
 If you are a Microsoft employee, and if you are the author of or a contributor to an article, you need to sign up for Livefyre so you can participate in the comment stream for the article.
 
-1. See [How do I create a Livefyre Account](https://livefyre.zendesk.com/hc/en-us/articles/200329426-How-do-I-create-a-Livefyre-Account-) for details on sign up options. Please use option b, *"Creating a Livefyre Account with a username, email, and password"*. 
+1. See [How do I create a Livefyre Account](https://livefyre.zendesk.com/hc/en-us/articles/200329426-How-do-I-create-a-Livefyre-Account-) for details on sign up options. Please use option b, *"Creating a Livefyre Account with a username, email, and password"*, so you can be easily identified when you post responses. 
 2. Fill out your profile as follows:
 
  - **Username**: your Microsoft email alias plus @MSFT, ie: *alias@MSFT*
@@ -65,7 +65,7 @@ If you are a Microsoft employee, and if you are the author of or a contributor t
 
 ## Determine whether you really need to follow the rest of these steps
 
-You might not need to follow all the steps in this article. It depends on the sort of content contribution you want or need to make.
+You might not need to follow all the steps in this article. As mentioned on the main Contributor Guide page, it depends on the magnitude of your contribution.
 
 ###Submit a text-only change to an existing article
 
@@ -73,7 +73,7 @@ If you only need or want to make textual updates to an existing article, you pro
 
  ![GitHub profile example](./media/tools-and-setup/contributetogit.png)
 
- Then, click the edit icon in the GitHub version of the article
+ Then, click the "Edit this file" icon in the GitHub version of the article
 
  ![GitHub profile example](./media/tools-and-setup/editicon.PNG)
 
