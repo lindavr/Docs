@@ -67,23 +67,12 @@ If you are a Microsoft employee, and if you are the author of or a contributor t
 
 You might not need to follow all the steps in this article. As mentioned on the main Contributor Guide page, it depends on the magnitude of your contribution.
 
-###Submit a text-only change to an existing article
+###Submit minor contributions to an existing article
 
-If you only need or want to make textual updates to an existing article, you probably don't need to follow the rest of the steps. You can use GitHub's web-based markdown editor to submit your changes. Just click the GitHub link in the article you want to modify:
-
- ![GitHub profile example](./media/tools-and-setup/contributetogit.png)
-
- Then, click the "Edit this file" icon in the GitHub version of the article
-
- ![GitHub profile example](./media/tools-and-setup/editicon.PNG)
-
- That opens the easy-to-use web editor that makes it easy to submit changes. You don't need to follow the other steps in this article.
+If you only need or want to make textual updates/corrections to an existing article, you probably don't need to follow the rest of the steps. You can use GitHub's Web-based markdown editor to submit your changes. Refer to the [](../readme.md#contributing-via-pull-request) in the main Contributor Guide page
 
 ###All other changes
-The GitHub UI does support creation of new files and dragging and dropping images. However, when you work in the UI, managing branches can be confusing so we typically recommend you install the tools and learn the commands for creating and managing articles. If you want to use the UI, see:
-
-- [Creating files on Github](https://github.com/blog/1327-creating-files-on-github)
-- [Upload files to your repositories](https://github.com/blog/2105-upload-files-to-your-repositories)
+When you work in the UI, you are limited in terms of what you can do. Managing branches can be confusing. So we typically recommend you install the tools and learn the commands for creating and managing articles. 
 
 For the following sorts of work, we strongly recommend you install and learn to use the tools:
 
@@ -223,21 +212,15 @@ To ensure you are listed correctly as a contributor, you need to configure your 
 - Copy [the markdown template](../markdown templates/markdown-template-for-new-articles.md) as the basis for a new article.
 
 
-
-
-
 ###Contributors' Guide Links
 
-- [Overview article](./../README.md)
-- [Index of guidance articles](./contributor-guide-index.md)
-
+- [Overview article](../readme.md)
 
 
 <!--Anchors-->
 [Use a customer-friendly voice]: #use-a-customer-friendly-voice
 [Consider localization and machine translation]: #consider-localization-and-machine-translation
 [other style and voice issues to watch for]: #other-style-and-voice-issues-to-watch-for
-
 
 [Create a GitHub account and set up your profile]: #create-a-github-account-and-set-up-your-profile
 [Determine whether you really need to follow the rest of these steps]: #determine-whether-you-really-need-to-follow-the-rest-of-these-steps
@@ -251,4 +234,4 @@ To ensure you are listed correctly as a contributor, you need to configure your 
 [Configure your user name and email locally]: #configure-your-user-name-and-email-locally
 [Next steps]: #next-steps
 [Livefyre]: http://web.livefyre.com/
-[DocsPubRepos]: ../readme2.md#repository-organization
+[DocsPubRepos]: ../readme.md#repository-organization
