@@ -59,7 +59,7 @@ If you're looking for a quick way to make a minor contribution, you can do this 
  
 Both of these will allow you to navigate directly into the GitHub page that serves the article source. Once you are there, click the "Edit this file" pencil icon in the upper right to go into edit mode:
 
-![GitHub profile example](./ContributorGuide/media/tools-and-setup/editicon.PNG) 
+![GitHub profile example](./ContributorGuide/media/tools-and-setup/editicon.png) 
 
 From here, you can specify your changes using the GitHub file editor. Although we prefer you fork the repository and use client-side tools, if you really need to create new files or upload existing files, see: 
 
