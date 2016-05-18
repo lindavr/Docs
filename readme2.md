@@ -22,7 +22,7 @@ This is the main page of the Contributor Guide, which is broken into the followi
   * Using GitHub's built-in Web based editor, for small contributions such as corrections
   * Using GitHub's repository forking mechanism, for all other contributions. This is also the method that the remainder of the guide will be focused on.
 * [Repository organization](#repository-organization) - provides an overview of the available docs.microsoft.com repositories to which you can contribute, and the associated directory/file structure and format.
-* [Get started with fork contributions](#get-started-with-fork-contributions) - provides the additional depth you will need go get started with the GitHub fork method for contributions. There is both a QuickStart path for folks with GitHub experience, and a longer more detailed path if you're starting from scratch.
+* [Get started with fork-based contributions](#get-started-with-fork-based-contributions) - provides the additional depth you will need go get started with the GitHub fork method for contributions. There is both a QuickStart path for folks with GitHub experience, and a longer more detailed path if you're starting from scratch.
 
 ## How to contribute
 
@@ -57,7 +57,7 @@ When you're finished, scroll to the bottom of the page where you can "Propose fi
 
 **Note**: the workflow is slightly different when you have write permissions to a repository. For more information, see the [Editing files in your repository](https://help.github.com/articles/editing-files-in-your-repository/) GitHub article.
 
-#### Large submissions: using a fork
+#### Large submissions: using a GitHub fork
 
 If you are making substantial changes to an existing article, adding or changing images, or contributing a new article, you will need to fork the repository you will be contributing to, using the GitHub user interface. A fork is a replica of the main repository, which provides you with a working copy which you can use in isolation. If you're not already familiar with making Github contributions, you will also need to install a local Git tool such as Git Bash, a Markdown editor, and learn some Git commands. 
 
@@ -113,7 +113,7 @@ For convenience, the root directory of each repository contains a Markdown templ
 
 At the top of the file, you'll also see a "metadata" section, which contains various tags used for tracking information relating to the article. Article metadata enables certain functionality, such as author attribution, contributor attribution, breadcrumbs, article descriptions, and SEO optimizations as well as reporting Microsoft uses to evaluate the performance of the content. So the metadata is important! If you're unsure of the values to use for the metadata section, you can leave them blank and they will be reviewed/completed by the pull request reviewer for the repository.
 
-## Get started with GitHub fork contributions
+## Get started with fork-based contributions
 
 As mentioned earlier, if you are making large contributions or are a Microsoft employee, you will need to make your contributions via a GitHub fork. If you're unfamiliar with Git, you may want to review some of the resources provided in the [Resources](#resources) section below.
 
