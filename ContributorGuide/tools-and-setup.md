@@ -1,30 +1,29 @@
-<properties 
-pageTitle="Install and set up tools for authoring in GitHub" 
-description="Tools and steps to get set up for authoring Azure content in GitHub." 
-services="contributor-guide" 
-documentationCenter="" 
-authors="tysonn"  
-manager="carolz" />
+---
 
-<tags 
-ms.service="contributor-guide"
- ms.devlang="" 
- ms.topic="article"
-  ms.tgt_pltfrm="" 
-  ms.workload="" 
-  ms.date="01/19/2015" 
-  ms.author="tysonn" />
+title: Docs.microsoft.com contributor guide - Tools and Setup
+description:
+keywords:
+author: bryanla
+manager: 
+ms.date: 05/17/2016
+ms.topic: article
+ms.prod:
+ms.service: 
+ms.technology:
+ms.assetid: 
+
+---
 
 #Install and set up tools for authoring in GitHub
 
-Follow the steps in this article to set up tools for contributing to the Azure technical documentation. Casual and occasional contributors probably can use the GitHub UI described in step 2.
+Follow the steps in this article to set up tools for contributing to the docs.microsoft.com technical documentation. Casual and occasional contributors probably can use the GitHub UI described in step 2.
 
 If you're unfamiliar with Git, you might want to review some Git terminology: [https://help.github.com/articles/github-glossary](https://help.github.com/articles/github-glossary). In addition, this StackOverflow thread contains a glossary of Git terms you'll encounter in this set of steps: [http://stackoverflow.com/questions/7076164/terminology-used-by-git](http://stackoverflow.com/questions/7076164/terminology-used-by-git)
 
 ## Contents
 
 - [Create a GitHub account and set up your profile](#create-a-github-account-and-set-up-your-profile)
-- [Sign up for Disqus](#sign-up-for-disqus)
+- [Sign up for Lifefyre](#sign-up-for-lifefyre)
 - [Determine whether you really need to follow the rest of these steps](#determine-whether-you-really-need-to-follow-the-rest-of-these-steps)
 - [Permissions in GitHub](#permissions-in-github)
 - [Install Git for Windows](#install-git-for-windows)
@@ -37,7 +36,7 @@ If you're unfamiliar with Git, you might want to review some Git terminology: [h
 
 ## Create a GitHub account and set up your profile
 
-To contribute to the Azure technical content, you'll need a [GitHub](http://www.github.com) account.
+To contribute to the docs.microsoft.com technical content, you'll need a [GitHub](http://www.github.com) account.
 
 If you are a Microsoft contributor, you need to set up your GitHub account so you're clearly identified as a Microsoft employee. Set up your profile as follows:
 
@@ -52,20 +51,17 @@ Your profile should resemble this profile:
 <p align="center">
  ![GitHub profile example](./media/tools-and-setup/githubprofile.png)
 
-## Sign up for Disqus
+## Sign up for Lifefyre
 
-Every published Azure technical article has a comment stream provided by the Disqus service.
+Every published technical article has a comment stream provided by the [Livefyre][Livefyre] service.
 
- ![Discus logo](./media/tools-and-setup/discus.png)
+If you are a Microsoft employee, and if you are the author of or a contributor to an article, you need to sign up for Livefyre so you can participate in the comment stream for the article.
 
-If you are a Microsoft employee, and if you are the author of or a contributor to an article, you need to sign up for Disqus so you can participate in the comment stream for the article.
-
-1. Sign up for an account at [http://www.disqus.com/](http://www.disqus.com/)
+1. See [How do I create a Livefyre Account](https://livefyre.zendesk.com/hc/en-us/articles/200329426-How-do-I-create-a-Livefyre-Account-) for details on sign up options. Please use option b, *"Creating a Livefyre Account with a username, email, and password"*. 
 2. Fill out your profile as follows:
 
- - **Full Name**: your full name as displayed in your Microsoft address book listing, plus the bracketed info, which is your alias plus @MSFT. Format: *First Last [alias@MSFT]*
- - **Location**: Your location
- - **Short Bio**: Your title
+ - **Username**: your Microsoft email alias plus @MSFT, ie: *alias@MSFT*
+ - **Email**: Your Microsoft.com email address.
 
 ## Determine whether you really need to follow the rest of these steps
 
@@ -99,9 +95,9 @@ For the following sorts of work, we strongly recommend you install and learn to 
 
 ##Permissions in GitHub
 
-Anybody with a GitHub account can contribute to Azure technical content through our public repository at [https://github.com/Azure/azure-content](https://github.com/Azure/azure-content). No special permissions are required.
+Anybody with a GitHub account can contribute to http://web.livefyre.com/ technical content through one of our [public repositories][DocsPubRepos]. No special permissions are required.
 
-If you are a Microsoft PM or writer who is working on Azure content, you must work in our private content repository, azure-content-pr. Visit [http://aka.ms/azuregithub](http://aka.ms/azuregithub) to obtain the read permissions that will let you make contributions through the private repo - sign in to GitHub using the button > click Azure > click **Join a team** or **Join another team**, and then search for and join the **azure-content-read** group.
+If you are a Microsoft PM or writer, you must work in one of our private content repositories. Visit [https://opensourcehub.microsoft.com/](https://opensourcehub.microsoft.com/) to obtain the read permissions that will let you make contributions through the private repo - sign in to GitHub using the button > click Azure > click **Join a team** or **Join another team**, and then search for and join the **azure-content-read** group.
 
 ## Install Git for Windows
 
@@ -254,3 +250,5 @@ To ensure you are listed correctly as a contributor, you need to configure your 
 [Sign up for Disqus]: #sign-up-for-disqus
 [Configure your user name and email locally]: #configure-your-user-name-and-email-locally
 [Next steps]: #next-steps
+[Livefyre]: http://web.livefyre.com/
+[DocsPubRepos]: ../readme2.md#repository-organization

@@ -1,10 +1,10 @@
-# Pull request etiquette and best practices for Microsoft contributors to Azure documentation
+# Pull request etiquette and best practices for contributions to internal/private docs.microsoft.com repositories
 
-To publish changes to documentation, you submit pull requests from your fork. Every pull request has to be reviewed prior to being merged. Read this article to understand how you should work with pull request reviewers and how you can create pull requests that are easier and faster to review so the pull request queue works better for everyone.
+To publish changes to content, you submit pull requests from your fork. Every pull request has to be reviewed prior to being merged. Read this article to understand how you should work with pull request reviewers and how you can create pull requests that are easier and faster to review so the pull request queue works better for everyone.
 
 ## Working with pull request reviewers
 
-Here's the basics you need to know about working with pull request reviewers. 
+Here are the basics you need to know about working with pull request reviewers. 
 
 - <b>Understand the role of the pull request reviewer. The reviewer:</b>
   - Ensures the basic quality of the content
@@ -40,8 +40,9 @@ You can help make the pull request queue work better by following these best pra
 
 - For releases or refactoring of content, plan ahead with your PR reviewer. You may need his or her help to create a release branch or to coordinate merge times with publishing times so your content is published at the right time.
 
-- If you are trying to coordinate updates made in the ACOM repo (ie, changes to left navigation, landing pages, redirects, or learning maps) with changes you are making in the azure-content-pr repository, you must coordinate that work ahead of time with your PR reviewer. Otherwise, you risk having a lot of broken links.
+- If you are trying to coordinate updates made by others out-of-band with changes you are making, which are interdependent, you must coordinate that work ahead of time with your PR reviewer. Otherwise, you risk having a lot of broken links.
 
+<!-- Disabled until we have PRMerger/PRAT enabled in OPS repos
 ## In a hurry? Submit PRs that can be accepted automatically
 
 Use the PRMerger automation rules to get more of your day-to-day PRs merged automatically.
@@ -60,3 +61,4 @@ Take your cue from the PRMerger automation rules above, and do the following:
 * Submit articles with light changes together in a PR with 10 or fewer files.
 * Create a separate PR for articles in which images or selectors change. This requires human review.
 * Create a separate PR for new or deleted articles. This requires human review.
+--> 
