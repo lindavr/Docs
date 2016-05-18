@@ -147,8 +147,8 @@ Once you've configured your GitHub account, installed a client Git tool (such as
 
 General guidance:
 
-- [Style and voice](/ContributorGuide/style-and-voice.md)
-- [Feedback, comments, and support](/ContributorGuide/feedback-and-comments.md)
+- [Style and voice](./ContributorGuide/style-and-voice.md)
+- [Feedback, comments, and support](./ContributorGuide/feedback-and-comments.md)
 
 Authoring articles: tools, processes, guidance :
 
@@ -177,9 +177,9 @@ All of the articles in this repository use [GitHub flavored Markdown](https://he
 
 - [Markdown basics](https://help.github.com/articles/getting-started-with-writing-and-formatting-on-github/) for a good reference on getting started. 
 - [GitHub Markdown Cheatsheet](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf) or our [Printable markdown cheatsheet](./media/documents/markdown-cheatsheet.pdf?raw=true) for a handy syntax reference.
-- [Create tables in Markdown](create-tables-markdown.md) for help on table creation. 
-- [Create images in Markdown](create-images-markdown.md) for help with using images in Markdown.
-- [Custom markdown extensions used in our technical articles - TBD](custom-markdown-extensions.md) for details on the Markdown extensions we use for custom rendering of Note blocks, videos, etc.
+- [Create tables in Markdown](/ContributorGuide/create-tables-markdown.md) for help on table creation. 
+- [Create images in Markdown](/ContributorGuide/create-images-markdown.md) for help with using images in Markdown.
+- [Custom markdown extensions used in our technical articles - TBD](/ContributorGuide/custom-markdown-extensions.md) for details on the Markdown extensions we use for custom rendering of Note blocks, videos, etc.
 - [Markdown template for technical articles](template.md) for a template to help you get started when proposing new articles.
 - [Metadata for docs.microsoft.com articles - TBD](article-metadata.md) to learn more about the article metadata we require at the top of each article.
 
