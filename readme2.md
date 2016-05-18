@@ -18,11 +18,11 @@ Thank you for your interest in [docs.microsoft.com](https://docs.microsoft.com/)
 This is the main page of the Contributor Guide, which is broken into the following sections:
 
 * [How to contribute](#how-to-contribute) - covers the various ways you can contribute, not only to the content, but to the larger communities that use services and features covered by docs.microsoft.com content.
-* [Contributing via Pull Request](#contributing-via-pull-request) - since the Pull Request mechanism is a primary way in which all content contributions are made, this section provides a brief overview of the process, which sets context for the remainder of the guide.
-  * [Minor corrections: using the GitHub editor](#minor-corrections-using-the-github-editor) - provides details on one of the two ways you can contribute to content, mainly for small contributions such as corrections.
-  * [Large submissions: using a fork](#large-submissions-using-a-fork) - provides details on the second way in which you can contribute to content, when you need to make more than just minor contributions, which is where the majority of the Contributor Guide is focused.
+* [Contributing via Pull Request](#contributing-via-pull-request) - since the Pull Request mechanism is a primary way in which all content contributions are made, this section provides a brief overview of the process, and details on the 2 ways in which you can contribute via a Pull Request:
+  * Using GitHub's built-in Web based editor, for small contributions such as corrections
+  * Using GitHub's repository forking mechanism, for all other contributions. This is also the method that the remainder of the guide will be focused on.
 * [Repository organization](#repository-organization) - provides an overview of the available docs.microsoft.com repositories to which you can contribute, and the associated directory/file structure and format.
-* [Get started with GitHub fork contributions](#get-started-with-github-fork-contributions) - provides
+* [Get started with fork contributions](#get-started-with-fork-contributions) - provides the additional depth you will need go get started with the GitHub fork method for contributions. There is both a QuickStart path for folks with GitHub experience, and a longer more detailed path if you're starting from scratch.
 
 ## How to contribute
 
