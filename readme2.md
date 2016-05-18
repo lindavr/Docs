@@ -147,10 +147,13 @@ We recommend that you create local working branches that target a specific scope
 
 ### GitHub/Git
 
-* If you're unfamiliar with Git, you may want to first review some [basic Git terminology](https://help.github.com/articles/github-glossary). In addition, [this StackOverflow thread](http://stackoverflow.com/questions/7076164/terminology-used-by-git.) contains a glossary of Git terms you'll encounter in this set of steps.
-* The [Learn Git course by Codecademy](https://www.codecademy.com/learn/learn-git) provides a 2 hour introduction to Git
-* The free [Pro Git e-book](http://git-scm.com/book/en/v2) provides excellent depth if you are new to Git, and also serves as a good reference
-* See the [Git Bash downloads page](https://git-scm.com/downloads) for the available Git Bash downloads by platform. Git Bash provides you with the tools you will need for proposing larger contributions via a personal fork of the repository, as discussed above.
+* If you're unfamiliar with Git, here are some good resources for ramp-up and familiarization
+  * The [GitHub glossary](https://help.github.com/articles/github-glossary) is a good source for basic terminology and definitions. In addition, [this StackOverflow thread](http://stackoverflow.com/questions/7076164/terminology-used-by-git.) contains a glossary of Git terms you'll encounter throughout the Contributor Guide.
+  * The [Learn Git course by Codecademy](https://www.codecademy.com/learn/learn-git) provides a 2 hour introduction to Git
+  * Another good beginner course can be found on [Code School](https://www.codeschool.com/courses/try-git). 
+  * GitHub also has a great [Resources for learning Git and Github page](https://help.github.com/articles/good-resources-for-learning-git-and-github/), which includes several tutorials/primers, cheat sheets, and video resources.
+  * The free [Pro Git e-book](http://git-scm.com/book/en/v2) provides excellent depth if you are new to Git, and also serves as a good reference
+* As mentioned, we recommend and primarily use the Git Bash command line environment for proposing larger contributions via a personal fork of a repository. When you're ready to install the tools, check out the [Git Bash downloads page](https://git-scm.com/downloads) for the available Git Bash downloads by platform.
 
 ### Markdown
 All the articles in this repository use GitHub flavored Markdown. See [Markdown basics](https://help.github.com/articles/getting-started-with-writing-and-formatting-on-github/) for a good reference on getting started, and the [GitHub Markdown Cheatsheet](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf) for a handy syntax reference. 
