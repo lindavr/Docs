@@ -18,8 +18,8 @@ Thank you for your interest in [docs.microsoft.com](https://docs.microsoft.com/)
 This is the main page of the Contributor Guide, which is broken into the following sections:
 
 * [How to contribute](#how-to-contribute) - covers the various ways you can contribute, not only to the content, but to the larger communities that use services and features covered by docs.microsoft.com content.
-  * [Pull Request overvew](#pull-request-overview) - since the Pull Request mechanism is a primary way in which all content contributions are made, this section provides a brief overview of the process, which sets context for the following sections.
-  * [Minor corrections: using the GitHub editor](#minor-corrections-using-the-GitHub-editor) - provides details on one of the two ways you can contribute to content, mainly for small contributions such as corrections.
+* [Contributing via Pull Request](#contributing-via-pull-request) - since the Pull Request mechanism is a primary way in which all content contributions are made, this section provides a brief overview of the process, which sets context for the remainder of the guide.
+  * [Minor corrections: using the GitHub editor](#minor-corrections-using-the-github-editor) - provides details on one of the two ways you can contribute to content, mainly for small contributions such as corrections.
   * [Large submissions: using a fork](#large-submissions-using-a-fork) - provides details on the second way in which you can contribute to content, when you need to make more than just minor contributions, which is where the majority of the Contributor Guide is focused.
 * test
 
