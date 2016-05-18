@@ -134,7 +134,7 @@ Once you've configured your GitHub account, installed a client Git tool (such as
 
 2.Create a branch for your local work. **Note:** We recommend that you create local working branches that target a specific scope of change. Each branch should be limited to a single concept/article both to streamline work flow and reduce the possibility of merge conflicts.  
 3.Edit the Markdown files using your favorite Markdown editor.  
-4 Commit and push your changes back up to your forked repository:  
+4. Commit and push your changes back up to your forked repository:  
         
         git add -u
         git commit -m "update doc"
@@ -147,7 +147,7 @@ Once you've configured your GitHub account, installed a client Git tool (such as
 
 General guidance:
 
-- [Content channel guidance](/contributor-guide/content-channel-guidance.md)
+- [Content channel guidance](/ContributorGuide/content-channel-guidance.md)
 
 - [Style and voice](style-and-voice.md)
 
