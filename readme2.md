@@ -21,7 +21,8 @@ This is the main page of the Contributor Guide, which is broken into the followi
 * [Contributing via Pull Request](#contributing-via-pull-request) - since the Pull Request mechanism is a primary way in which all content contributions are made, this section provides a brief overview of the process, which sets context for the remainder of the guide.
   * [Minor corrections: using the GitHub editor](#minor-corrections-using-the-github-editor) - provides details on one of the two ways you can contribute to content, mainly for small contributions such as corrections.
   * [Large submissions: using a fork](#large-submissions-using-a-fork) - provides details on the second way in which you can contribute to content, when you need to make more than just minor contributions, which is where the majority of the Contributor Guide is focused.
-* test
+* [Repository organization](#repository-organization) - provides an overview of the available docs.microsoft.com repositories to which you can contribute, and the associated directory/file structure and format.
+* [Get started with GitHub fork contributions](#get-started-with-github-fork-contributions) - provides
 
 ## How to contribute
 
@@ -43,7 +44,7 @@ A *Pull Request* provides a convenient way to bundle up a series of proposed cha
 
 There are a couple of different ways of contributing via Pull Request, depending on the size of changes you would like to propose.
 
-### Minor corrections: using the GitHub editor
+#### Minor corrections: using the GitHub editor
 
 If you're looking for a quick way to make a minor contribution, you can do this directly in the GitHub Web page that corresponds to the file in which you would like to propose changes. This requires little/no knowledge of Git versioning workflow, and you can start this process by using either of the following methods :
 
@@ -56,11 +57,11 @@ When you're finished, scroll to the bottom of the page where you can "Propose fi
 
 **Note**: the workflow is slightly different when you have write permissions to a repository. For more information, see the [Editing files in your repository](https://help.github.com/articles/editing-files-in-your-repository/) GitHub article.
 
-### Large submissions: using a fork
+#### Large submissions: using a fork
 
 If you are making substantial changes to an existing article, adding or changing images, or contributing a new article, you will need to fork the repository you will be contributing to, using the GitHub user interface. A fork is a replica of the main repository, which provides you with a working copy which you can use in isolation. If you're not already familiar with making Github contributions, you will also need to install a local Git tool such as Git Bash, a Markdown editor, and learn some Git commands. 
 
-### Additional considerations
+#### Additional considerations
 
 * If you submit a pull request with new files or significant changes to documentation or code samples, we may also need to correspond with you in the pull request, asking you to submit an online Contribution License Agreement (CLA).
 * Minor corrections or clarifications you submit for documentation and code examples in the repository are covered by the [Microsoft Terms of Use (ToU)](https://www.microsoft.com/en-us/legal/intellectualproperty/copyright/default.aspx).
@@ -112,7 +113,7 @@ For convenience, the root directory of each repository contains a Markdown templ
 
 At the top of the file, you'll also see a "metadata" section, which contains various tags used for tracking information relating to the article. Article metadata enables certain functionality, such as author attribution, contributor attribution, breadcrumbs, article descriptions, and SEO optimizations as well as reporting Microsoft uses to evaluate the performance of the content. So the metadata is important! If you're unsure of the values to use for the metadata section, you can leave them blank and they will be reviewed/completed by the pull request reviewer for the repository.
 
-## Using a GitHub fork to make contributions
+## Get started with GitHub fork contributions
 
 As mentioned earlier, if you are making large contributions or are a Microsoft employee, you will need to make your contributions via a GitHub fork. If you're unfamiliar with Git, you may want to review some of the resources provided in the [Resources](#resources) section below.
 
