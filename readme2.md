@@ -144,7 +144,7 @@ Once you've configured your GitHub account, installed a client Git tool (such as
 
 General guidance:
 
-- [Content channel guidance](content-channel-guidance.md)
+- [Content channel guidance](/contributor-guide/content-channel-guidance.md)
 
 - [Style and voice](style-and-voice.md)
 
