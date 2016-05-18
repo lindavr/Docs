@@ -61,11 +61,14 @@ When you're finished, scroll to the bottom of the page where you can "Propose fi
 
 If you are making substantial changes to an existing article, adding or changing images, or contributing a new article, you will need to fork the repository you will be contributing to, using the GitHub user interface. A fork is a replica of the main repository, which provides you with a working copy which you can use in isolation. If you're not already familiar with making Github contributions, you will also need to install a local Git tool such as Git Bash, a Markdown editor, and learn some Git commands. 
 
+**Note**: Microsoft employees that own (or are regular contributors to) docs.microsoft.com are expected to use a fork of the private repo where their content resides. 
+
 #### Additional considerations
 
 * If you submit a pull request with new files or significant changes to documentation or code samples, we may also need to correspond with you in the pull request, asking you to submit an online Contribution License Agreement (CLA).
 * Minor corrections or clarifications you submit for documentation and code examples in the repository are covered by the [Microsoft Terms of Use (ToU)](https://www.microsoft.com/en-us/legal/intellectualproperty/copyright/default.aspx).
-* If you are a Microsoft employee please always make your contributions via a fork, and use the internal repository. This will ensure your contributions run through the build validation process, and afford you a staging environment for evaluating/testing your changes.
+* If you are a Microsoft 
+*  please always make your contributions via a fork, and use the internal repository. This will ensure your contributions run through the build validation process, and afford you a staging environment for evaluating/testing your changes.
 *  See the [Resources](#resources) section below for more information on Git concepts such as repositories, forks, branches, pull requests, etc.  
 
 ## Repository organization
@@ -85,9 +88,9 @@ The content published to docs.microsoft.com is partitioned into several GitHub r
 
 The content in each repository is loosely aligned with the organization of the articles on the corresponding [https://docs.microsoft.com/](https://docs.microsoft.com/) landing pages. A series of subdirectories are used for separation of usage scenarios/stages (ie: Understand & Explore, Deploy & Use, etc), along with media content (ie: image files) and include files (Markdown files that are reused across multiple main articles).
 
-### Main articles directory
+#### Main articles directory
 
-The main articles directory is found directly off the root of the repository, and contains a set of subdirectories with articles formatted as Markdown files with an *.md* extension. For example, the IntuneDocs repository content is the `\InTuneDocs` subdirectory. 
+The main articles directory is found directly off the root of the repository, and contains a set of subdirectories with articles formatted as Markdown files which use an *.md* extension. For example, the main articles directory for the [https://github.com/microsoft/IntuneDocs](https://github.com/microsoft/IntuneDocs) repository is the `\InTuneDocs` subdirectory. 
 
 Within the root of this directory are general articles that relate to the overall service, along with another series of subdirectories, which match the common scenarios as outlined on the main landing page for the service. For instance, the Intune "Understand & Explore" articles are in the `Understand` subdirectory, "Deploy & Use" articles are found in the `DeployUse` subdirectory, etc.  
 
@@ -107,7 +110,7 @@ Within the root of this directory are general articles that relate to the overal
 
     The statement must begin with `> [!INCLUDE`, followed immediately by a user-defined name for the include site enclosed in brackets, `[accessibility6]`, followed immediately by the relative path to the include file enclosed in parentheses, `(./includes/accessibility6_md.md)`, and terminated with the closing bracket, `]`.
 
-### Markdown file template
+#### Markdown file template
 
 For convenience, the root directory of each repository contains a Markdown template file named `template.md`, which can be used as a "starter file" if you need to create a new article for submission to the repository. The file contains various examples of using Markdown to format an article, along with general instructions. 
 
@@ -115,17 +118,18 @@ At the top of the file, you'll also see a "metadata" section, which contains var
 
 ## Get started with fork-based contributions
 
-As mentioned earlier, if you are making large contributions or are a Microsoft employee, you will need to make your contributions via a GitHub fork. If you're unfamiliar with Git, you may want to review some of the resources provided in the [Resources](#resources) section below.
+As mentioned earlier, if you are making large contributions or are a Microsoft employee, you will need to make your contributions via a GitHub fork. 
 
-### Quickstart
+If you're familiar with Git, you may want to just jump to the [Quickstart](#quickstart) section below. If you're unfamiliar with Git, you may want to review some of the resources provided in the [Resources](#resources) section below before beginning, then begin at the [Step-by-step](#step-by-step) section.
+
+#### Quickstart
 Once you've configured your GitHub account, installed a client Git tool (such as [Git Bash](https://git-scm.com/downloads)), and created your own fork of the repository, you can used the following general steps to start contributing to this repo:
 
 1.Clone the repository:  
 
-
     git clone https://github.com/Microsoft/IntuneDocs.git
 
-2.Create a branch for your local work.  
+2.Create a branch for your local work. **Note:** We recommend that you create local working branches that target a specific scope of change. Each branch should be limited to a single concept/article both to streamline work flow and reduce the possibility of merge conflicts.  
 3.Edit the Markdown files using your favorite Markdown editor.  
 4 Commit and push your changes back up to your forked repository:  
         
@@ -136,13 +140,35 @@ Once you've configured your GitHub account, installed a client Git tool (such as
 5.Return to GitHub and create a pull request, requesting that your branch be pulled into the "master" branch of the related Enterprise Mobility repository.  
 6. Your content will be automatically published once the pull request is accepted.  
 
-### Branches
+#### Step-by-step
 
-We recommend that you create local working branches that target a specific scope of change. Each branch should be limited to a single concept/article both to streamline work flow and reduce the possibility of merge conflicts.  The following efforts are of the appropriate scope for a new branch:
+General guidance:
 
-* A new article (and associated images)
-* Spelling and grammar edits on an article.
-* Applying a single formatting change across a large set of articles (e.g. new copyright footer).
+- [Content channel guidance](content-channel-guidance.md)
+
+- [Style and voice](style-and-voice.md)
+
+- [Feedback, comments, and support](feedback-and-comments.md)
+
+
+Authoring articles: tools, processes, guidance :
+
+- [Tools and setup for authoring in GitHub](tools-and-setup.md)
+
+- [Git commands for creating a new article or updating an existing article](git-commands-for-master.md)
+
+<!-- [Git commands for staging an article on the internal preview site](./git-commands-for-sandbox.md)-->
+
+- [File names and locations for Azure technical articles](file-names-and-locations.md)
+
+- [Linking guidelines](create-links-markdown.md/)
+
+- [Retire or rename an article](retire-or-rename-an-article.md)
+
+- [How to undo almost anything with Git (GitHub blog)](https://github.com/blog/2019-how-to-undo-almost-anything-with-git)
+
+- [Pull request etiquette and best practices for Microsoft contributors](contributor-guide-pull-request-etiquette.md)
+
 
 ## Resources
 
@@ -157,7 +183,16 @@ We recommend that you create local working branches that target a specific scope
 * As mentioned, we recommend and primarily use the Git Bash command line environment for proposing larger contributions via a personal fork of a repository. When you're ready to install the tools, check out the [Git Bash downloads page](https://git-scm.com/downloads) for the available Git Bash downloads by platform.
 
 ### Markdown
-All the articles in this repository use GitHub flavored Markdown. See [Markdown basics](https://help.github.com/articles/getting-started-with-writing-and-formatting-on-github/) for a good reference on getting started, and the [GitHub Markdown Cheatsheet](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf) for a handy syntax reference. 
+All of the articles in this repository use [GitHub flavored Markdown](https://help.github.com/articles/github-flavored-markdown/). See
+
+- [Markdown basics](https://help.github.com/articles/getting-started-with-writing-and-formatting-on-github/) for a good reference on getting started. 
+- [GitHub Markdown Cheatsheet](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf) or our [Printable markdown cheatsheet](./media/documents/markdown-cheatsheet.pdf?raw=true) for a handy syntax reference.
+- [Create tables in Markdown](create-tables-markdown.md) for help on table creation. 
+- [Create images in Markdown](create-images-markdown.md) for help with using images in Markdown.
+- [Custom markdown extensions used in our technical articles - TBD](custom-markdown-extensions.md) for details on the Markdown extensions we use for custom rendering of Note blocks, videos, etc.
+- [Markdown template for technical articles](template.md) for a template to help you get started when proposing new articles.
+- [Metadata for docs.microsoft.com articles - TBD](article-metadata.md) to learn more about the article metadata we require at the top of each article.
+
 
 This is not an exhaustive list, but here are a few ideas for Markdown editors that you may wish to try:
 
@@ -165,8 +200,6 @@ This is not an exhaustive list, but here are a few ideas for Markdown editors th
 - **Prose**: This is a lightweight, elegant, on-line, and open source Markdown editor that offers a preview. Visit [http://prose.io](http://prose.io) and authorize Prose in your repository.
 - **[Visual Studio Code](https://www.visualstudio.com/products/code-vs.aspx)** - A lightweight but powerful source code editor which runs on your desktop and is available for Windows, OS X and Linux. 
 - **Notepad**: You can use Notepad for a very lightweight option.
-
-
 
 <!---- Reference links for Docs landing pages, associated GitHub repositories, and related Forums matrix. ------------------>
 <!---- PLEASE INSERT URLS IN ASCENDING SORT ORDER, AND REMOVE LOCALE SEGMENT FROM URLS (ie: en-us) FOR LOCALIZED FORUMS! -->
