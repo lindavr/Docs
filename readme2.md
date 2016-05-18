@@ -1,3 +1,5 @@
+---
+
 title: Docs.microsoft.com contributor guide
 description:
 keywords:
@@ -10,6 +12,7 @@ ms.service:
 ms.technology:
 ms.assetid: 6EFEA410-29E0-400C-A1C2-D93296DDD1DD
 
+---
 
 # Docs.microsoft.com contributor guide
 
