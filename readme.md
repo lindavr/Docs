@@ -189,7 +189,7 @@ Detailed guidance for the tools and processes you need to contribute to articles
 All of the articles in this repository use [GitHub flavored Markdown](https://help.github.com/articles/github-flavored-markdown/). See
 
 - [Markdown basics](https://help.github.com/articles/getting-started-with-writing-and-formatting-on-github/) for a good reference on getting started. 
-- [GitHub Markdown Cheatsheet](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf) or our [printable markdown cheatsheet](./ContributorGuide/media/documents/markdown-cheatsheet.pdf?raw=true) for a handy syntax reference.
+- [GitHub's full Markdown cheatsheet](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf) or a [condensed version](./ContributorGuide/media/documents/markdown-cheatsheet.pdf?raw=true) for a handy syntax reference.
 - [Create tables in Markdown](./ContributorGuide/create-tables-markdown.md) for help on table creation. 
 - [Create images in Markdown](./ContributorGuide/create-images-markdown.md) for help with using images in Markdown.
 - [Custom markdown extensions used in our technical articles - TBD](./ContributorGuide/custom-markdown-extensions.md) for details on the Markdown extensions we use for custom rendering of Note blocks, videos, etc.
