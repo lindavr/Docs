@@ -37,12 +37,12 @@ If you're unfamiliar with Git, you might want to review some Git terminology: [h
 
 To contribute to the docs.microsoft.com technical content, you'll need a [GitHub](http://www.github.com) account.
 
-If you are a Microsoft contributor, you need to set up your GitHub account so you're clearly identified as a Microsoft employee. Set up your profile as follows:
+**Note:** If you are a Microsoft contributor, you need to set up your GitHub account so you're clearly identified as a Microsoft employee. Set up your profile as follows:
 
 - **Profile picture**: a picture of you (required)
 - **Name**: your first and last name (required)
 - **Email**: your Microsoft email address (optional)
-- **Company**: Microsoft Corporation (required)
+- **Company**: "Microsoft Corporation" (required)
 - **Location**: list your location (optional)
 
 Your profile should resemble this profile:
