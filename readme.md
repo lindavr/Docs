@@ -49,13 +49,13 @@ There are a couple of different ways of contributing via Pull Request, depending
 
 #### Minor contributions: using the GitHub editor
 
-If you're looking for a quick way to make a minor contribution, you can do this directly in the GitHub Web page that corresponds to the file in which you would like to propose changes. This requires little/no knowledge of Git versioning workflow, and you can start this process by using either of the following methods :
+If you're looking for a quick way to make a minor contribution, you can do this directly in the GitHub Web page that corresponds to the article/file in which you would like to propose changes. This requires little/no knowledge of Git versioning workflow, and you can start this process by using either of the following methods :
 
 * visit the specific article on [https://docs.microsoft.com/](https://docs.microsoft.com/),  then click the "Edit" link in the upper-right corner of the article :
  
     ![GitHub profile example](./ContributorGuide/media/tools-and-setup/contributetogit.png) 
 
-* find the article by browsing the Markdown files in the related repository (see below for the list)  
+* find the article by browsing the Markdown files in the related repository (See the [Repository organization](#repository-organization) section below for the list of repositories).  
  
 Both of these will allow you to navigate directly into the GitHub page that serves the article source. Once you are there, click the "Edit this file" pencil icon in the upper right to go into edit mode:
 
@@ -66,15 +66,15 @@ From here, you can specify your changes using the GitHub file editor. Although w
 - [Creating files on Github](https://github.com/blog/1327-creating-files-on-github)
 - [Upload files to your repositories](https://github.com/blog/2105-upload-files-to-your-repositories)
 
-When you're finished, scroll to the bottom of the page where you can "Propose file change", which is the default option when you have read access to the repository. Users with read access will then be directed to a working branch in their own fork of the repository (which GitHub will also create for you if it does not already exist), and be presented with a "Create pull request" page to create a new entry in the repo's Pull Request queue. For more information, see the [Editing files in another user's repository](https://help.github.com/articles/editing-files-in-another-user-s-repository/) GitHub article.
+When you're finished, scroll to the bottom of the page where you can "Propose file change", which is the default option when you have read access to the repository. Users with read access will then be directed to a working branch in their own fork of the repository (which GitHub will also create for you if it does not already exist), and be presented with a "Create pull request" page to create a new entry in the repo's Pull Request queue. For more information on the entire workflow, see the [Editing files in another user's repository](https://help.github.com/articles/editing-files-in-another-user-s-repository/) GitHub article.
 
 **Note**: the workflow is slightly different when you have write permissions to a repository. For more information, see the [Editing files in your repository](https://help.github.com/articles/editing-files-in-your-repository/) GitHub article.
 
 #### Large submissions: using a GitHub fork
 
-If you are making substantial changes to an existing article, adding or changing images, or contributing a new article, you will need to fork the repository you will be contributing to, using the GitHub user interface. A fork is a replica of the main repository, which provides you with a working copy which you can use in isolation. If you're not already familiar with making Github contributions, you will also need to install a local Git tool such as Git Bash, a Markdown editor, and learn some Git commands. 
+If you are making substantial changes to an existing article, adding or changing images, or contributing a new article, you will need to use the GitHub fork feature. A *fork* is a replica of the main repository, which provides you with a working copy which you can use in isolation. If you're not already familiar with making Github contributions, you will also need to install a local Git tool such as Git Bash, a Markdown editor, and learn some Git commands. 
 
-**Note**: Microsoft employees that own (or are regular contributors to) docs.microsoft.com are expected to use a fork of the private repo where their content resides. 
+**Note**: Microsoft employees that own (or are regular contributors to) docs.microsoft.com content, are expected to use a fork of the private repo where their content resides. 
 
 #### Additional considerations
 
@@ -86,7 +86,7 @@ If you are making substantial changes to an existing article, adding or changing
 
 ## Repository organization
 
-The content published to docs.microsoft.com is partitioned into several GitHub repositories. The table below enumerates the current set of docs.microsoft.com landing pages, the GitHub repository that contains the associated articles, and the related discussion forum(s) :
+The content published to docs.microsoft.com is partitioned into several public GitHub repositories. The table below enumerates the current set of docs.microsoft.com landing pages, the GitHub repository that contains the associated articles, and the related discussion forum(s) :
 
 | Main Landing Page | Solution/Service Landing Page | GitHub Org/Repository | Discussion Forum(s) |
 |:---------------------------:|:-------------------------------------------:|:-------------------------:|:----------------------------:|
@@ -168,7 +168,6 @@ Detailed guidance for the tools and processes you need to contribute to articles
 - [Git commands for creating a new article or updating an existing article](./ContributorGuide/git-commands-for-master.md)
 - [Linking guidelines](./ContributorGuide/create-links-markdown.md/)
 - [Retire or rename an article](./ContributorGuide/retire-or-rename-an-article.md)
-- [How to undo almost anything with Git (GitHub blog)](https://github.com/blog/2019-how-to-undo-almost-anything-with-git)
 - [Pull request etiquette and best practices for Microsoft internal contributors](./ContributorGuide/contributor-guide-pull-request-etiquette.md)
 
 ## Resources
@@ -182,6 +181,8 @@ Detailed guidance for the tools and processes you need to contribute to articles
   * GitHub also has a great [Resources for learning Git and Github page](https://help.github.com/articles/good-resources-for-learning-git-and-github/), which includes several tutorials/primers, cheat sheets, and video resources.
   * The free [Pro Git e-book](http://git-scm.com/book/en/v2) provides excellent depth if you are new to Git, and also serves as a good reference
 * As mentioned, we recommend and primarily use the Git Bash command line environment for proposing larger contributions via a personal fork of a repository. When you're ready to install the tools, check out the [Git Bash downloads page](https://git-scm.com/downloads) for the available Git Bash downloads by platform.
+* As you become more familiar with Git and GitHub, the following articles may be helpful:
+  * - [How to undo almost anything with Git (GitHub blog)](https://github.com/blog/2019-how-to-undo-almost-anything-with-git)
 
 ### Markdown
 All of the articles in this repository use [GitHub flavored Markdown](https://help.github.com/articles/github-flavored-markdown/). See
