@@ -158,17 +158,13 @@ Once you've configured your GitHub account, installed a client Git tool (such as
 
 #### Step-by-step
 
-General guidance to review before you begin:
+When you're ready to embark on submitting a Pull Request, refer to the following articles for guidance on the tools and processes you will need along the way: 
 
-- [Style and voice](./ContributorGuide/style-and-voice.md)
-
-Detailed guidance for the tools and processes you need to contribute to articles via your fork: 
-
-- [Tools and setup for authoring in GitHub](./ContributorGuide/tools-and-setup.md)
-- [Git commands for creating a new article or updating an existing article](./ContributorGuide/git-commands-for-master.md)
-- [Linking guidelines](./ContributorGuide/create-links-markdown.md/)
-- [Retire or rename an article](./ContributorGuide/retire-or-rename-an-article.md)
-- [Pull request etiquette and best practices for Microsoft internal contributors](./ContributorGuide/contributor-guide-pull-request-etiquette.md)
+1. First read the [Style and voice article](./ContributorGuide/style-and-voice.md) 
+2. Then do the one-time [Tools and setup steps for authoring in GitHub](./ContributorGuide/tools-and-setup.md)
+3. [Git commands for creating a new article or updating an existing article](./ContributorGuide/git-commands-for-master.md) will guide you in creating your Pull Request
+4. Read [Retire or rename an article](./ContributorGuide/retire-or-rename-an-article.md) if you think a particular article should be removed from publishing
+5. Microsoft employees should also read [Pull request etiquette and best practices for Microsoft internal contributors](./ContributorGuide/contributor-guide-pull-request-etiquette.md)
 
 ## Resources
 
@@ -191,6 +187,7 @@ All of the articles in this repository use [GitHub flavored Markdown](https://he
 - [GitHub's full Markdown cheatsheet](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf) or a [condensed version](./ContributorGuide/media/documents/markdown-cheatsheet.pdf?raw=true), which are printable for a handy syntax reference.
 - [Create tables in Markdown](./ContributorGuide/create-tables-markdown.md) for help on table creation. 
 - [Create images in Markdown](./ContributorGuide/create-images-markdown.md) for help with using images in Markdown.
+- [Linking guidelines](./ContributorGuide/create-links-markdown.md/)
 - [Markdown template for technical articles](template.md) for a template to help you get started when proposing new articles.
 
 
