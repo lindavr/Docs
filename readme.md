@@ -21,7 +21,7 @@ Thank you for your interest in [docs.microsoft.com](https://docs.microsoft.com/)
 This is the main page of the Contributor Guide, which is broken into the following sections:
 
 * **[How to contribute](#how-to-contribute)** - covers the various ways you can contribute, not only to the content, but to the larger communities that use services and features covered by docs.microsoft.com content.
-* **[Contributing via pull request](#contributing-via-pull-request)** - the pull request mechanism is a primary way in which all content contributions are made. This section provides a brief overview of the process, along with basic definitions of some of the terms we use on docs.microsoft.com. It also contains a summary of the two ways in which you can create a pull request:
+* **[Contributing via pull request](#contributing-via-pull-request)** - the pull request mechanism is a primary way in which all content contributions are made. This section provides a brief overview of the process, along with basic definitions of some of the terms we use on docs.microsoft.com. It also contains a summary of the two ways in which you can originate a pull request:
   * Using GitHub's built-in editor to make small contributions, such as corrections.
   * Making changes using a local repository, then pushing them up to GitHub. 
 * **[Repository organization](#repository-organization)** - provides an overview of the available docs.microsoft.com repositories to which you can contribute, and the associated directory/file structure and format.
@@ -46,7 +46,7 @@ A *pull request* provides a convenient way to bundle up a series of proposed cha
 
 There are a couple of different ways of contributing by pull request, depending on the size of changes you would like to propose.
 
-### Minor contributions: using the GitHub editor
+#### Minor contributions: using the GitHub editor
 
 If you're looking for a quick way to make a minor contribution, you can do this directly in the GitHub Web page that corresponds to the article/file in which you would like to propose changes. This requires little/no knowledge of Git versioning workflow, and you can start this process by using either of the following methods :
 
@@ -69,13 +69,13 @@ When you're finished, scroll to the bottom of the page where you can **Propose f
 
 **Note**: the workflow is slightly different when you have write permissions to a repository. For more information, see the [Editing files in your repository](https://help.github.com/articles/editing-files-in-your-repository/) GitHub article.
 
-### Large submissions: creating your own local repository
+#### Large submissions: creating your own local repository
 
 If you are making substantial changes to an existing article, adding or changing images, or contributing a new article, you will need to manually create your GitHub fork, then clone the fork down to your local computer. A *fork* is a GitHub-based replica of the main repository, under your GitHub account, which provides you with a working copy which you can use in isolation. It is from your fork that you will create Pull Requests, which will target a docs.microsoft.com repository. Similarly, a *clone* is a local based replica of repository which, in this case, will be a clone of your fork. The clone allows you to work on Git repositories offline, and using more powerful native software/tools.
 
 If you're not already familiar with making Github contributions, you will also need to install a local Git tool such as Git Bash, a Markdown editor, and learn some Git commands. The [Get started using a local repository](#get-started-using-a-local-repository) section will have more details on this. This may seem confusing if you've never used Git or Github, but after a few weeks of usage, it will become second nature.
 
-### Additional considerations
+#### Additional considerations
 
 * If you submit a pull request with new files or significant changes to documentation or code samples, we may also need to correspond with you in the pull request, asking you to submit an online Contribution License Agreement (CLA).
 * Minor corrections or clarifications you submit for documentation and code examples in the repository are covered by the [Microsoft Terms of Use (ToU)](https://www.microsoft.com/en-us/legal/intellectualproperty/copyright/default.aspx).
@@ -99,7 +99,7 @@ The content published to docs.microsoft.com is partitioned into several public G
 
 The content in each repository is loosely aligned with the organization of the articles on the corresponding [https://docs.microsoft.com/](https://docs.microsoft.com/) landing pages. A series of subdirectories are used for separation of usage scenarios/stages (ie: Understand & Explore, Deploy & Use, etc), along with media content (ie: image files) and include files (Markdown files that are reused across multiple main articles).
 
-### Main articles directory
+#### Main articles directory
 
 The main articles directory is found directly off the root of the repository, and contains a set of subdirectories with articles formatted as Markdown files which use an *.md* extension. For example, the main articles directory for the [https://github.com/microsoft/IntuneDocs](https://github.com/microsoft/IntuneDocs) repository is the `/InTuneDocs` subdirectory. 
 
@@ -123,7 +123,7 @@ Within the root of this directory are general articles that relate to the overal
 
     The statement must begin with `> [!INCLUDE`, followed immediately by a user-defined name for the include site enclosed in brackets, `[accessibility6]`, followed immediately by the relative path to the include file enclosed in parentheses, `(./includes/accessibility6_md.md)`, and terminated with the closing bracket, `]`.
 
-### Markdown file template
+#### Markdown file template
 
 For convenience, the root directory of each repository contains a Markdown template file named `template.md`, which can be used as a "starter file" if you need to create a new article for submission to the repository. The file contains:
 
@@ -138,7 +138,7 @@ For convenience, the root directory of each repository contains a Markdown templ
 
 As mentioned earlier, if you are making large contributions or are a Microsoft employee, you need to create your own fork of the docs.microsoft.com repository, and clone it to your computer, creating your own local repository. If you're familiar with Git, you may want to just jump to the [Quickstart](#quickstart) section below. If you're unfamiliar with Git, you may want to review some of the resources provided in the [Resources](#resources) section below before beginning, then begin at the [Step-by-step](#step-by-step) section.
 
-### Quickstart
+#### Quickstart
 Once you've configured your GitHub account, installed a client Git tool (such as [Git Bash](https://git-scm.com/downloads)), and created your own fork of the repository you will be contributing to, you can use the following general steps to create a pull request that contains your proposed contributions:
 
 1. Clone your forked repository
@@ -156,7 +156,7 @@ Once you've configured your GitHub account, installed a client Git tool (such as
 5. Return to your GitHub fork and create a pull request, requesting that the commits on your working branch be pulled into the "master" branch of the repository you originally forked.
 6. Your content will be automatically published once the pull request is reviewed and merged.
 
-### Step-by-step
+#### Step-by-step
 
 When you're ready to embark on creating a local repository and submitting a pull request, refer to the following articles for detailed guidance on the tools and processes you will need along the way: 
 
@@ -168,7 +168,7 @@ When you're ready to embark on creating a local repository and submitting a pull
 
 ## Resources
 
-### GitHub/Git
+#### GitHub/Git
 
 * If you're unfamiliar with Git, here are some good resources for ramp-up and familiarization
   * The [GitHub glossary](https://help.github.com/articles/github-glossary) is a good source for basic terminology and definitions. In addition, [this StackOverflow thread](http://stackoverflow.com/questions/7076164/terminology-used-by-git.) contains a glossary of Git terms you'll encounter throughout the Contributor Guide.
@@ -180,7 +180,7 @@ When you're ready to embark on creating a local repository and submitting a pull
 * As you become more familiar with Git and GitHub, the following articles may be helpful:
   * [How to undo almost anything with Git (GitHub blog)](https://github.com/blog/2019-how-to-undo-almost-anything-with-git)
 
-### Markdown
+#### Markdown
 All of the articles in this repository use [GitHub flavored Markdown](https://help.github.com/articles/github-flavored-markdown/). See
 
 - [Markdown basics](https://help.github.com/articles/getting-started-with-writing-and-formatting-on-github/) for a good reference on getting started. 
