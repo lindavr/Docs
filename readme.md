@@ -168,7 +168,7 @@ When you're ready to embark on creating a local repository and submitting a Pull
 
 ## Resources
 
-### GitHub/Git
+#### GitHub/Git
 
 * If you're unfamiliar with Git, here are some good resources for ramp-up and familiarization
   * The [GitHub glossary](https://help.github.com/articles/github-glossary) is a good source for basic terminology and definitions. In addition, [this StackOverflow thread](http://stackoverflow.com/questions/7076164/terminology-used-by-git.) contains a glossary of Git terms you'll encounter throughout the Contributor Guide.
@@ -180,7 +180,7 @@ When you're ready to embark on creating a local repository and submitting a Pull
 * As you become more familiar with Git and GitHub, the following articles may be helpful:
   * - [How to undo almost anything with Git (GitHub blog)](https://github.com/blog/2019-how-to-undo-almost-anything-with-git)
 
-### Markdown
+#### Markdown
 All of the articles in this repository use [GitHub flavored Markdown](https://help.github.com/articles/github-flavored-markdown/). See
 
 - [Markdown basics](https://help.github.com/articles/getting-started-with-writing-and-formatting-on-github/) for a good reference on getting started. 
