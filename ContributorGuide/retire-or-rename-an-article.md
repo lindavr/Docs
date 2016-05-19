@@ -1,8 +1,24 @@
-# Steps to follow when you retire or change the name of an ACOM technical article
+---
 
-This guidance is for SMEs who are listed as the author of an article that needs to be retired from the technical documentation section of azure.microsoft.com. The steps also apply if a file is renamed.
+title: Docs.microsoft.com contributor guide - retire/rename a technical article
+description:
+keywords:
+author: bryanla
+manager: 
+ms.date: 05/19/2016
+ms.topic: article
+ms.prod:
+ms.service: 
+ms.technology:
+ms.assetid: 6EFEA410-29E0-400C-A1C2-D93296DDD1DD
 
-If you're a member of our Azure community and you think an article should be retired for any reason, please leave a comment in the Disqus comment stream for the article to let the author know something is wrong with the article.
+---
+
+# Steps to follow when you retire or change the name of a technical article
+
+This guidance is for SMEs who are listed as the author of an article that needs to be retired from docs.microsoft.com. The steps also apply if an article's file name is renamed.
+
+If you're a member of the docs.microsoft.com community and you think an article should be retired for any reason, please leave a comment in the Disqus comment stream for the article to let the author know something is wrong with the article.
 
 SME authors need to follow several steps to gracefully retire content so users of the website don't have a bad experience when we retire content from the site. Deleting the article or changing its name should be the last thing that happens!
 
@@ -20,13 +36,13 @@ Do not rely on redirects to take care of crosslinks from other articles. Update 
 
 1. Ensure you are working in an up-to-date local branch – run `git pull upstream master` (or the appropriate variation on this command.
 
-2.	Scan the azure-content-pr/articles folder and the azure-content-pr/includes folder for any articles and includes that link to the article you want to retire, and either remove the crosslinks or replace them with an appropriate new crosslinks. You can use a search and replace utility to find the crosslinks if you have one installed. If you don't, you can use Windows PowerShell for free! Here's how to use PowerShell to find the crosslinks:
+2.	Scan the appropriate repository folders for any articles and includes that link to the article you want to retire, and either remove the crosslinks or replace them with an appropriate new crosslinks. You can use a search and replace utility to find the crosslinks if you have one installed. If you don't, you can use Windows PowerShell for free! Here's how to use PowerShell to find the crosslinks:
 
  a. Start Windows PowerShell.
 
  b. At the PowerShell prompt, change into the azure-content-pr\articles folder:
 
- `cd azure-content-pr\articles`
+ `cd <repository-name>
 
  c. Type this command, which will list all files that contain a reference to the article you are deleting:
 
@@ -40,29 +56,19 @@ Do not rely on redirects to take care of crosslinks from other articles. Update 
 
 ## Step 4: Update the FWLink tool (required)
 
-Check the FWLink tool for any FWLinks that might point to the article. Point any FWLinks at replacement content; if you are not on the alias that owns the link, join it. If the owners won't update the link, file a ticket with MSCOM to have the link changed. More info - [internal wiki](http://sharepoint/sites/azurecontentguidance/wiki/Pages/Manage%20inbound%20links%20to%20retired%20topics.aspx).
+Check the FWLink tool for any FWLinks that might point to the article. Point any FWLinks at replacement content; if you are not on the internal alias that owns the link, join it. If the owners won't update the link, file a ticket with MSCOM to have the link changed. More info - [internal wiki](http://sharepoint/sites/azurecontentguidance/wiki/Pages/Manage%20inbound%20links%20to%20retired%20topics.aspx).
 
-## Step 5: Remove all crosslinks to the article from other pages on azure.microsoft.com and create a redirect for the retired page, if appropriate (required)
-
-You'll have to work with the person who maintains and updates the documentation landing page for your service for this part. Contact your content team partner if you don't know who that person is. The person who maintains and updates the doc landing page will need to do two things:
-
-1. In Visual Studio, scan the **entire** ACOM web solution for cross references to the file to retire. Remove the cross references, or replace them with an updated cross reference. You'll need to remove the HTML links as well as the related resource strings for the HTML links. More info - see the [internal wiki](http://sharepoint/sites/azurecontentguidance/wiki/Pages/Create%20or%20edit%20a%20service%20landing%20page%20or%20left%20nav.aspx)
-
-2. If a replacement article exists, create a redirect. More info - see the [internal wiki](http://sharepoint/sites/azurecontentguidance/wiki/Pages/Remove%20published%20pages%20and%20request%20redirects.aspx).
-
-3. Check the changes into the repository.
-
-## Step 6: Retire the article
+## Step 5: Retire the article
 
 After you've completed the prior steps and those changes are live, you can delete the article from the repository. 
 
-**Important:** When you delete files, you must use the `git add --all` command.
+**Important:** When you delete files, you must use the `git add -A` command.
 
-## Step 7: Remove links from MSDN (required)
+## Step 6: Remove any links from MSDN articles (required)
 
 Review the content QA tool for broken links to the retired or renamed topic and remove/fix the links in all MSDN topics affected.
 
-## Step 8: Remove cached pages from search engines (only if absolutely necessary)
+## Step 7: Remove cached pages from search engines (only if absolutely necessary)
 
 Do this ONLY if the content needs to be removed quickly due to legal or severe customer issues. Per best practices from Google, normal priority page deletions should just be handled by natural search engine processes. Go to these web pages to remove cached web pages from search engines:
 
@@ -70,7 +76,7 @@ Do this ONLY if the content needs to be removed quickly due to legal or severe c
 [Google](https://www.google.com/webmasters/tools/removals?pli=1)
 
 
-### Contributors' guide links
+## Next steps
 
-- [Overview article](./../README.md)
-- [Index of guidance articles](./contributor-guide-index.md)
+- Back to [Step-by-step instructions](../readme.md#step-by-step) in main Contributor Guide
+
