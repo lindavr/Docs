@@ -37,7 +37,7 @@ If you're unfamiliar with Git, you might want to review some Git terminology: [h
 
 To contribute to the docs.microsoft.com technical content, you'll need a [GitHub](http://www.github.com) account.
 
-**Note:** If you are a Microsoft contributor, you need to set up your GitHub account so you're clearly identified as a Microsoft employee. Set up your profile as follows:
+**Note:** If you are a Microsoft employee, you need to set up your GitHub account so you're clearly identified as a Microsoft employee. Set up your profile as follows:
 
 - **Profile picture**: a picture of you (required)
 - **Name**: your first and last name (required)
@@ -218,4 +218,4 @@ To ensure you are listed correctly as a contributor, you need to configure your 
 [Next steps]: #next-steps
 [Livefyre]: http://web.livefyre.com/
 [DocsPubRepos]: ../readme.md#repository-organization
-[UsingGithubEditor]: (../readme.md#minor-contributions-using-the-github-editor)
+[UsingGithubEditor]: ../readme.md#minor-contributions-using-the-github-editor
