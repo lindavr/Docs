@@ -68,7 +68,7 @@ If you did not land on this page from the [main page of the Contributor Guide](.
 If you only need or want to make textual updates/corrections to an existing article, you probably don't need to follow the rest of the steps. You can use GitHub's Web-based markdown editor to submit your changes. Refer to the [Minor contributions: using the GitHub editor][UsingGithubEditor] section in the main Contributor Guide page.
 
 ### All other changes
-When you work in the GitHub UI, you are limited in terms of what you can do. Managing branches can be confusing, for instance. So we typically recommend you install the tools and learn the commands for creating and managing articles in a local repo. 
+When you work in the GitHub UI, you are limited in terms of what you can do. Managing branches can be confusing, for instance. So we typically recommend you install the tools and learn the commands for creating and managing articles in a local repository. 
 
 For the following types of tasks, we strongly recommend you install and learn to use the tools for local authoring:
 
@@ -88,12 +88,20 @@ Anybody with a GitHub account can contribute to docs.microsoft.com content throu
 
 Install Git for Windows from [http://git-scm.com/download/win](http://git-scm.com/download/win). This download installs the Git version control system, and it installs Git Bash, the command-line app that you will use to interact with your local Git repository.
 
-You can accept the default settings; if you want the commands to be available within the Windows command line, select the option that enables it.
+You can accept all default settings, unless you want different behavior (ie: commands Git commands are available within the Windows command line, for instance)
 
 <p align="center">
- ![GitHub profile example](./media/tools-and-setup/gitbashinstall.png)
+ ![GitHub profile example](./media/tools-and-setup/gitbashinstall-282-1.png)
+<p align="center">
+ ![GitHub profile example](./media/tools-and-setup/gitbashinstall-282-2.png)
+<p align="center">
+ ![GitHub profile example](./media/tools-and-setup/gitbashinstall-282-3.png)
+<p align="center">
+ ![GitHub profile example](./media/tools-and-setup/gitbashinstall-282-4.png)
+<p align="center">
+ ![GitHub profile example](./media/tools-and-setup/gitbashinstall-282-5.png)
 
-(Note: This is not the same as "Github for Windows". "Github for Windows" is a different GUI-based tool that will also work if you want to read up on yourself. [https://windows.github.com/](https://windows.github.com/)) 
+(Note: If you prefer a Graphical User Interface over a Command Line Interface, see [Free Software Foundation's available GUI Clients](https://git-scm.com/downloads/guis), [GitHub's GitHub Desktop](https://desktop.github.com/), or [Visual Studio Code](https://www.visualstudio.com/products/code-vs.aspx)for some popular options. Please note, however, that this guide is written from the point of view of a CLI user.
 
 ## Enable two-factor authentication
 
