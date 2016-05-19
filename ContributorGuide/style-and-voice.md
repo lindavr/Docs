@@ -62,7 +62,7 @@ Our technical articles are translated into many other languages, and some are mo
 
 - For steps that include code snippets, put additional information about the step into the code as comments. This reduces the amount of text people have to read through, and the key information gets copied into the code project to remind people of what the code is doing when they refer to it later.
 
-- Use official product names, such as “Microsoft Azure”, or just say “Azure”, as in "Azure Mobile Services".
+- Use official product names, such as “Microsoft Intune” or "Microsoft Advanced Threat Analytics". Or you can just say “Intune” or "Advanced Threat Analytics".
 
 - Don’t create acronyms in place of office product names, especially if they are not already established. For instance, don't use "Azure MS" in place of "Azure Mobile Services", or "AAD" in place of "Azure Active Directory". If an acronym is already established, such as "AD" spell it out on first reference with the acronym in parentheses ("Azure Active Directory (AD)"), then use "Azure AD" for subsequent references. Try to avoid acronyms in general though - they just confuse people.
 
@@ -71,10 +71,6 @@ Our technical articles are translated into many other languages, and some are mo
 - Use "sign-in" and not "log-in."
 
 - Include the words "following" or "as follows" in every sentence that precedes a list or code snippet.
-
-- "SQL Database" is the Azure feature. A "SQL database" is a database instance running on SQL Database.
-
-- Azure Storage includes several "data management services" that include the Table service, the Blob service, and the Queue service. Don't use a concatenated form, such as "Azure Table storage service".
 
 ## Next steps
 
