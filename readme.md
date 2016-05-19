@@ -75,8 +75,6 @@ If you are making substantial changes to an existing article, adding or changing
 
 If you're not already familiar with making Github contributions, you will also need to install a local Git tool such as Git Bash, a Markdown editor, and learn some Git commands. The [Get started using a local repository](#get-started-using-a-local-repository) section will have more details on this. This may seem confusing if you've never used Git or Github, but after a few weeks of usage, it will become second nature.
 
-**Note**: Microsoft employees that own (or are regular contributors to) docs.microsoft.com content, are expected to use a fork of the private repo where their content resides. 
-
 #### Additional considerations
 
 * If you submit a pull request with new files or significant changes to documentation or code samples, we may also need to correspond with you in the pull request, asking you to submit an online Contribution License Agreement (CLA).
@@ -138,7 +136,7 @@ For convenience, the root directory of each repository contains a Markdown templ
 
 ## Get started using a local repository
 
-As mentioned earlier, if you are making large contributions or are a Microsoft employee, you will need to make your contributions via a GitHub fork. If you're familiar with Git, you may want to just jump to the [Quickstart](#quickstart) section below. If you're unfamiliar with Git, you may want to review some of the resources provided in the [Resources](#resources) section below before beginning, then begin at the [Step-by-step](#step-by-step) section.
+As mentioned earlier, if you are making large contributions or are a Microsoft employee, you will need to create your own fork of the docs.microsoft.com repository, and clone it to your computer, creating your own local repository. If you're familiar with Git, you may want to just jump to the [Quickstart](#quickstart) section below. If you're unfamiliar with Git, you may want to review some of the resources provided in the [Resources](#resources) section below before beginning, then begin at the [Step-by-step](#step-by-step) section.
 
 #### Quickstart
 Once you've configured your GitHub account, installed a client Git tool (such as [Git Bash](https://git-scm.com/downloads)), and created your own fork of the repository you will be contributing to, you can use the following general steps to create a pull request that contains your proposed contributions:
