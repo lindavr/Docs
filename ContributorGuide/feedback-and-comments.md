@@ -1,3 +1,18 @@
+---
+
+title: Docs.microsoft.com contributor guide - feedback and comments
+description:
+keywords:
+author: tysonn
+manager: 
+ms.date: 05/17/2016
+ms.topic: article
+ms.prod:
+ms.service: 
+ms.technology:
+ms.assetid: 4779ECCE-73C3-4E23-8B49-A8F6CD0FA3EA
+
+---
 # Feedback, comments, and support
 
 If you have feedback, comments, or need help using Azure, here are the suggested channels:
@@ -9,3 +24,7 @@ If you have feedback, comments, or need help using Azure, here are the suggested
 - If you need support using Azure, your best bets are StackOverflow, MSDN, and our support channels. See the [forum links](https://azure.microsoft.com/en-us/support/forums/) and our [support options page](https://azure.microsoft.com/en-us/support/options/).
 
 -	Product and feature feedback is best handled through the [general feedback page for Azure](https://feedback.azure.com).
+
+## Next steps
+
+- Back to [Step-by-step instructions](../readme.md#step-by-step) in main Contributor Guide

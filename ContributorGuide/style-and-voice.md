@@ -10,7 +10,7 @@ ms.topic: article
 ms.prod:
 ms.service: 
 ms.technology:
-ms.assetid: 
+ms.assetid: 72021D35-BA12-4BF8-A204-00183A201D0E
 
 ---
 
@@ -76,12 +76,9 @@ Our technical articles are translated into many other languages, and some are mo
 
 - Azure Storage includes several "data management services" that include the Table service, the Blob service, and the Queue service. Don't use a concatenated form, such as "Azure Table storage service".
 
+## Next steps
 
-
-
-###Contributors' Guide Links
-
-- [Overview article](../readme.md)
+- Back to [Step-by-step instructions](../readme.md#step-by-step) in main Contributor Guide
 
 <!--Anchors-->
 [Use a customer-friendly voice]: #use-a-customer-friendly-voice

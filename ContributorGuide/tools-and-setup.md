@@ -10,7 +10,7 @@ ms.topic: article
 ms.prod:
 ms.service: 
 ms.technology:
-ms.assetid: 
+ms.assetid: 107118BE-02F4-4F91-BBC7-FD9BA630A60E
 
 ---
 
@@ -206,16 +206,11 @@ To ensure you are listed correctly as a contributor, you need to configure your 
     ````
 4. Type `git config -l` and review your local settings to ensure the user name and email in the configuration are correct.
 
-##Next steps
+## Next steps
 
 - [Create a local working branch](./git-commands-for-master.md) on your computer so you can start work.
 - Copy [the markdown template](../template.md) as the basis for a new article.
-
-
-###Contributors' Guide Links
-
-- [Overview article](../readme.md)
-
+- Back to [Step-by-step instructions](../readme.md#step-by-step) in main Contributor Guide
 
 <!--Anchors-->
 [Use a customer-friendly voice]: #use-a-customer-friendly-voice

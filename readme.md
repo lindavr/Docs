@@ -79,7 +79,7 @@ If you're not already familiar with making Github contributions, you will also n
 
 * If you submit a pull request with new files or significant changes to documentation or code samples, we may also need to correspond with you in the pull request, asking you to submit an online Contribution License Agreement (CLA).
 * Minor corrections or clarifications you submit for documentation and code examples in the repository are covered by the [Microsoft Terms of Use (ToU)](https://www.microsoft.com/en-us/legal/intellectualproperty/copyright/default.aspx).
-* If you are a Microsoft employee, please always make your contributions via a fork, and use the internal repository. This will ensure your contributions run through the build validation process, and afford you a staging environment for evaluating/testing your changes.
+* If you are a Microsoft employee, please always make your contributions via a fork, and use the internal repository that hosts your content. This will ensure your contributions run through the build process, providing validation and affording you a staging environment for evaluating/testing your changes.
 *  See the [Resources](#resources) section below for more information on Git concepts such as repositories, forks, branches, pull requests, etc.  
 
 ## Repository organization
@@ -127,7 +127,7 @@ Within the root of this directory are general articles that relate to the overal
 
 For convenience, the root directory of each repository contains a Markdown template file named `template.md`, which can be used as a "starter file" if you need to create a new article for submission to the repository. The file contains:
 
-- a **metadata header** at the top of the file, delineated by 2, 3-hyphen lines, and containing the various tags used for tracking information relating to the article. Article metadata enables certain functionality, such as author attribution, contributor attribution, breadcrumbs, article descriptions, and SEO optimizations as well as reporting Microsoft uses to evaluate the performance of the content. So the metadata is important!
+- a **metadata header** at the top of the file, delineated by two, 3-hyphen lines, and containing the various tags used for tracking information relating to the article. Article metadata enables certain functionality, such as author attribution, contributor attribution, breadcrumbs, article descriptions, and SEO optimizations as well as reporting processes used by Microsoft to evaluate the performance of the content. So the metadata is important!
 - a **"Metadata" section** that describes the various metadata tags and values. If you're unsure of the values to use for the metadata section, you can leave them blank, or comment them with a leading hashtag (#) and they will be reviewed/completed by the pull request reviewer for the repository.
 -  various **examples of using Markdown** to format the elements of an artice article
 -  general **instructions on the use of Markdown extensions**, which can be used for various types of alerts
@@ -153,7 +153,7 @@ Once you've configured your GitHub account, installed a client Git tool (such as
         git commit -m "update doc"
         git push origin <branch-name> 
           
-5. Return to GitHub and create a pull request, requesting that the commits on your branch be pulled into the "master" branch of the repository you originally cloned from.
+5. Return to your GitHub fork and create a pull request, requesting that the commits on your working branch be pulled into the "master" branch of the repository you originally forked.
 6. Your content will be automatically published once the pull request is reviewed and merged.
 
 #### Step-by-step
