@@ -72,17 +72,17 @@ Follow the steps below to create a local working branch on your computer, which 
 
 ## Publishing
 
-- Articles are published at approximately 10:00 AM and 3:00 PM Pacific Time, Monday-Friday. It can take up to 30 minutes for articles to appear online after publishing. Remember your pull request has to be merged by a pull request reviewer before the changes can be included in the next scheduled publishing run. You need to work with your pull request reviewer ahead of time to ensure a pull request is merged for a specific publishing run. Otherwise, PRs are reviewed in the order they were submitted.
+- Articles are published at approximately 10:00 AM and 3:30 PM Pacific Time, Monday-Friday. It can take up to 45 minutes for articles to appear online after publishing. Remember your pull request has to be merged by a pull request reviewer before the changes can be included in the next scheduled publishing run. You need to work with your pull request reviewer ahead of time to ensure a pull request is merged for a specific publishing run. Otherwise, PRs are reviewed in the order they were submitted.
 
 - If you are an employee working in the private repository, all pull requests are subject to validation rules that need to be addressed before the pull request can be merged. 
 
-## Working with release branches
+## Working with release branches (Microsoft employees)
 
-When you are working with a release branch, the best way to create a local working branch from the release branch is to use this command syntax:
+If you need to work with a release branch that has been created by the release manager, the best way to create a local working branch from the release branch is to use this command syntax:
 
     git checkout upstream/<upstream branch name> -b <local working branch name>
 
-This creates the local branch directly from the upstream branch, avoiding any local merging.
+This creates the local branch directly from the upstream branch, avoiding any local merging. The instructions for creating/updating/deleting content, pushing back to your fork, open a Pull Request, etc., are the same as the instructions above for 'master' branch contributions, just use the release branch naming convention instead. When the release is ready, the release manager will merge the release branch into 'master'.
 
 ## Next steps
 
