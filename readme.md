@@ -5,7 +5,7 @@ description:
 keywords:
 author: bryanla
 manager: 
-ms.date: 05/17/2016
+ms.date: 05/19/2016
 ms.topic: article
 ms.prod:
 ms.service: 
@@ -158,10 +158,10 @@ Once you've configured your GitHub account, installed a client Git tool (such as
 
 #### Step-by-step
 
-When you're ready to embark on submitting a Pull Request, refer to the following articles for guidance on the tools and processes you will need along the way: 
+When you're ready to embark on creating a local repository and submitting a Pull Request, refer to the following articles for detailed guidance on the tools and processes you will need along the way: 
 
 1. First read the [Style and voice article](./ContributorGuide/style-and-voice.md) 
-2. Then do the one-time [Tools and setup steps for authoring in GitHub](./ContributorGuide/tools-and-setup.md)
+2. Then complete the one-time [Install and setup tools for authoring GitHub content locally](./ContributorGuide/tools-and-setup.md)
 3. [Git commands for creating a new article or updating an existing article](./ContributorGuide/git-commands-for-master.md) will guide you in creating your Pull Request
 4. Read [Retire or rename an article](./ContributorGuide/retire-or-rename-an-article.md) if you think a particular article should be removed from publishing
 5. Microsoft employees should also read [Pull request etiquette and best practices for Microsoft internal contributors](./ContributorGuide/contributor-guide-pull-request-etiquette.md)

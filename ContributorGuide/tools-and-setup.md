@@ -5,7 +5,7 @@ description:
 keywords:
 author: bryanla
 manager: 
-ms.date: 05/17/2016
+ms.date: 05/19/2016
 ms.topic: article
 ms.prod:
 ms.service: 
@@ -14,9 +14,9 @@ ms.assetid: 107118BE-02F4-4F91-BBC7-FD9BA630A60E
 
 ---
 
-#Install and set up tools for authoring in GitHub
+#Install and set up tools for authoring GitHub content locally
 
-Follow the steps in this article to set up tools for contributing to the docs.microsoft.com technical documentation. Casual and occasional contributors probably can use the GitHub UI described in step 2.
+Follow the steps in this article to set up local tools for contributing to the docs.microsoft.com technical documentation stored on GitHub. 
 
 If you're unfamiliar with Git, you might want to review some Git terminology: [https://help.github.com/articles/github-glossary](https://help.github.com/articles/github-glossary). In addition, this StackOverflow thread contains a glossary of Git terms you'll encounter in this set of steps: [http://stackoverflow.com/questions/7076164/terminology-used-by-git](http://stackoverflow.com/questions/7076164/terminology-used-by-git)
 
@@ -24,12 +24,11 @@ If you're unfamiliar with Git, you might want to review some Git terminology: [h
 
 - [Create a GitHub account and set up your profile](#create-a-github-account-and-set-up-your-profile)
 - [Sign up for Lifefyre](#sign-up-for-lifefyre)
-- [Determine whether you really need to follow the rest of these steps](#determine-whether-you-really-need-to-follow-the-rest-of-these-steps)
+- [Determine whether you need to follow the rest of these steps](#determine-whether-you-really-need-to-follow-the-rest-of-these-steps)
 - [Permissions in GitHub](#permissions-in-github)
 - [Install Git for Windows](#install-git-for-windows)
 - [Enable two-factor authentication](#enable-two-factor-authentication)
 - [Install a markdown editor](#install-a-markdown-editor)
-- [Configure Atom](#configure-atom)
 - [Fork the repository and copy it to your computer](#fork-the-repository-and-copy-it-to-your-computer)
 - [Configure your user name and email locally](#configure-your-user-name-and-email-locally)
 - [Next steps](#next-steps)
@@ -53,28 +52,25 @@ Your profile should resemble this profile:
 
 ## Sign up for Lifefyre
 
-Every published technical article has a comment stream provided by the [Livefyre][Livefyre] service.
+Every published technical article supports a comment stream provided by the [Livefyre][Livefyre] service. If you wish to contribute comments (either general or "sidenote"), please see [How do I create a Livefyre Account](https://livefyre.zendesk.com/hc/en-us/articles/200329426-How-do-I-create-a-Livefyre-Account-) for details on sign up options. 
 
-If you are a Microsoft employee, and if you are the author of or a contributor to an article, you need to sign up for Livefyre so you can participate in the comment stream for the article.
-
-1. See [How do I create a Livefyre Account](https://livefyre.zendesk.com/hc/en-us/articles/200329426-How-do-I-create-a-Livefyre-Account-) for details on sign up options. Please use option b, *"Creating a Livefyre Account with a username, email, and password"*, so you can be easily identified when you post responses. 
-2. Fill out your profile as follows:
+**Note:** If you are a Microsoft employee and article author or contributor, you need to sign up for Livefyre so you can participate in the comment stream for the article. Please use option *"b"* during sign up, *"Creating a Livefyre Account with a username, email, and password"*, so you can be easily identified when you post responses, and complete your profile as follows:
 
  - **Username**: your Microsoft email alias plus @MSFT, ie: *alias@MSFT*
  - **Email**: Your Microsoft.com email address.
 
 ## Determine whether you really need to follow the rest of these steps
 
-You might not need to follow all the steps in this article. As mentioned on the main Contributor Guide page, it depends on the magnitude of your contribution.
+If you did not land on this page from the [main page of the Contributor Guide](../readme.md), you may not need to follow all the steps in this article. As mentioned on the main Contributor Guide page, it depends on the magnitude of your contribution.
 
-###Submit minor contributions to an existing article
+### Submitting minor contributions to an existing article
 
-If you only need or want to make textual updates/corrections to an existing article, you probably don't need to follow the rest of the steps. You can use GitHub's Web-based markdown editor to submit your changes. Refer to the [](../readme.md#contributing-via-pull-request) in the main Contributor Guide page
+If you only need or want to make textual updates/corrections to an existing article, you probably don't need to follow the rest of the steps. You can use GitHub's Web-based markdown editor to submit your changes. Refer to the [Minor contributions: using the GitHub editor][UsingGithubEditor] section in the main Contributor Guide page.
 
-###All other changes
-When you work in the UI, you are limited in terms of what you can do. Managing branches can be confusing. So we typically recommend you install the tools and learn the commands for creating and managing articles. 
+### All other changes
+When you work in the GitHub UI, you are limited in terms of what you can do. Managing branches can be confusing, for instance. So we typically recommend you install the tools and learn the commands for creating and managing articles in a local repo. 
 
-For the following sorts of work, we strongly recommend you install and learn to use the tools:
+For the following types of tasks, we strongly recommend you install and learn to use the tools for local authoring:
 
  - Making major changes to an article
  - Creating and publishing a new article
@@ -84,9 +80,9 @@ For the following sorts of work, we strongly recommend you install and learn to 
 
 ##Permissions in GitHub
 
-Anybody with a GitHub account can contribute to http://web.livefyre.com/ technical content through one of our [public repositories][DocsPubRepos]. No special permissions are required.
+Anybody with a GitHub account can contribute to docs.microsoft.com content through one of our [public repositories][DocsPubRepos]. No special permissions are required, as you have read access to public repositories by default.
 
-If you are a Microsoft PM or writer, you must work in one of our private content repositories. Visit [https://opensourcehub.microsoft.com/](https://opensourcehub.microsoft.com/) to obtain the read permissions that will let you make contributions through the private repo - sign in to GitHub using the button > click Azure > click **Join a team** or **Join another team**, and then search for and join the **azure-content-read** group.
+**Note:** If you are a Microsoft employee, you must work in one of our private content repositories. First visit [https://opensourcehub.microsoft.com/](https://opensourcehub.microsoft.com/) to join your Github and Microsoft credentials for the GitHub "Microsoft" organization. Then ask a member of your content development team to add you to the appropriate GitHub team for read permissions in your private repository. Once you have read permissions, you will be able to fork the private repository later.
 
 ## Install Git for Windows
 
@@ -123,21 +119,13 @@ After you enable 2FA, you have to enter the access token instead of your GitHub 
 
 We author content using simple "markdown" notation in the files, rather than complex "markup" (HTML, XML, etc.). So, you'll need to install a markdown editor.
 
-- **Atom**: Most of us use GitHub's Atom markdown editor: [http://atom.io](http://atom.io). It does not require a license for business use. It has spell check. 
-
+- **Atom**: GitHub's Atom Markdown editor: [http://atom.io](http://atom.io). It does not require a license for business use, and has spell check. After installation, you'll also need to set a few things up:
+  - Atom defaults to using 2 spaces for tabs, but Markdown expects 4 spaces. If you leave it at the default of two, your article will look great in local preview, but not when it’s imported into Azure. So, configure Atom to use 4 spaces - you can find this setting under File>Settings>Editor Settings>Tab Length. 
+  - You will probably also want to turn on Soft Wrap in this section too, which does the same as "word wrap" in Notepad. 
+  - To turn on the markdown preview, click Packages>Markdown Preview>Toggle Preview. You can use Ctrl-Shift-M to toggle the preview HTML view.
+- **Prose**: This is a lightweight, elegant, on-line, and open source Markdown editor that offers a preview. Visit [http://prose.io](http://prose.io) and authorize Prose in your repository.
+- **[Visual Studio Code](https://www.visualstudio.com/products/code-vs.aspx)** - A lightweight but powerful source code editor which runs on your desktop and is available for Windows, OS X and Linux. 
 - **Notepad**: You can use Notepad for a very lightweight option.
-
-- **Prose**: This is a lightweight, elegant, on-line, and open source markdown editor that offers a preview. Visit [http://prose.io](http://prose.io) and authorize Prose in your repository.
-
-- **[Visual Studio Code](https://www.visualstudio.com/products/code-vs.aspx)** - Microsoft's entry in this space.
-
-## Configure Atom
-
-If you use Atom, you'll need to set a few things up.
-
-- Atom defaults to using 2 spaces for tabs, but Markdown expects 4 spaces. If you leave it at the default of two, your article will look great in local preview, but not when it’s imported into Azure. So, configure Atom to use 4 spaces - you can find this setting under File>Settings>Editor Settings>Tab Length. 
-- You will probably also want to turn on Soft Wrap in this section too, which does the same as "word wrap" in Notepad. 
-- To turn on the markdown preview, click Packages>Markdown Preview>Toggle Preview. You can use Ctrl-Shift-M to toggle the preview HTML view. 
 
 ## Fork the repository and copy it to your computer
 
@@ -208,8 +196,8 @@ To ensure you are listed correctly as a contributor, you need to configure your 
 
 ## Next steps
 
-- [Create a local working branch](./git-commands-for-master.md) on your computer so you can start work.
-- Copy [the markdown template](../template.md) as the basis for a new article.
+- [Create a local working branch](./git-commands-for-master.md) on your computer so you can start work
+- If creating a new article, start with a copy of [the docs.microsoft.com markdown template](../template.md) 
 - Back to [Step-by-step instructions](../readme.md#step-by-step) in main Contributor Guide
 
 <!--Anchors-->
@@ -230,3 +218,4 @@ To ensure you are listed correctly as a contributor, you need to configure your 
 [Next steps]: #next-steps
 [Livefyre]: http://web.livefyre.com/
 [DocsPubRepos]: ../readme.md#repository-organization
+[UsingGithubEditor]: (../readme.md#minor-contributions-using-the-github-editor)
