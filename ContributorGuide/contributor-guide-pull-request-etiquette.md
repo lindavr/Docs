@@ -1,3 +1,19 @@
+---
+
+title: Docs.microsoft.com contributor guide - pull request etiquette
+description:
+keywords:
+author: tysonn
+manager: 
+ms.date: 05/19/2016
+ms.topic: article
+ms.prod:
+ms.service: 
+ms.technology:
+ms.assetid: FB2DE416-2F81-49AC-9AB9-F519CC131C7D
+
+---
+
 # Pull request etiquette and best practices for contributions to internal/private docs.microsoft.com repositories
 
 To publish changes to content, you submit pull requests from your fork. Every pull request has to be reviewed prior to being merged. Read this article to understand how you should work with pull request reviewers and how you can create pull requests that are easier and faster to review so the pull request queue works better for everyone.
@@ -62,3 +78,7 @@ Take your cue from the PRMerger automation rules above, and do the following:
 * Create a separate PR for articles in which images or selectors change. This requires human review.
 * Create a separate PR for new or deleted articles. This requires human review.
 --> 
+
+## Next steps
+
+- Back to [Step-by-step instructions](../readme.md#step-by-step) in main Contributor Guide
