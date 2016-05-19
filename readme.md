@@ -72,7 +72,7 @@ When you're finished, scroll to the bottom of the page where you can "Propose fi
 
 #### Large submissions: using a GitHub fork
 
-If you are making substantial changes to an existing article, adding or changing images, or contributing a new article, you will need to use the GitHub fork feature. A *fork* is a replica of the main repository, which provides you with a working copy which you can use in isolation. If you're not already familiar with making Github contributions, you will also need to install a local Git tool such as Git Bash, a Markdown editor, and learn some Git commands. 
+If you are making substantial changes to an existing article, adding or changing images, or contributing a new article, you will need to use the GitHub fork feature. A *fork* is a replica of the main repository, which provides you with a working copy which you can use in isolation. If you're not already familiar with making Github contributions, you will also need to install a local Git tool such as Git Bash, a Markdown editor, and learn some Git commands. The [Get started with fork-based contributions](#get-started-with-fork-based-contributions) section will have more details on this.
 
 **Note**: Microsoft employees that own (or are regular contributors to) docs.microsoft.com content, are expected to use a fork of the private repo where their content resides. 
 
@@ -80,8 +80,7 @@ If you are making substantial changes to an existing article, adding or changing
 
 * If you submit a pull request with new files or significant changes to documentation or code samples, we may also need to correspond with you in the pull request, asking you to submit an online Contribution License Agreement (CLA).
 * Minor corrections or clarifications you submit for documentation and code examples in the repository are covered by the [Microsoft Terms of Use (ToU)](https://www.microsoft.com/en-us/legal/intellectualproperty/copyright/default.aspx).
-* If you are a Microsoft 
-*  please always make your contributions via a fork, and use the internal repository. This will ensure your contributions run through the build validation process, and afford you a staging environment for evaluating/testing your changes.
+* If you are a Microsoft employee, please always make your contributions via a fork, and use the internal repository. This will ensure your contributions run through the build validation process, and afford you a staging environment for evaluating/testing your changes.
 *  See the [Resources](#resources) section below for more information on Git concepts such as repositories, forks, branches, pull requests, etc.  
 
 ## Repository organization
@@ -103,9 +102,9 @@ The content in each repository is loosely aligned with the organization of the a
 
 #### Main articles directory
 
-The main articles directory is found directly off the root of the repository, and contains a set of subdirectories with articles formatted as Markdown files which use an *.md* extension. For example, the main articles directory for the [https://github.com/microsoft/IntuneDocs](https://github.com/microsoft/IntuneDocs) repository is the `\InTuneDocs` subdirectory. 
+The main articles directory is found directly off the root of the repository, and contains a set of subdirectories with articles formatted as Markdown files which use an *.md* extension. For example, the main articles directory for the [https://github.com/microsoft/IntuneDocs](https://github.com/microsoft/IntuneDocs) repository is the `/InTuneDocs` subdirectory. 
 
-Within the root of this directory are general articles that relate to the overall service, along with another series of subdirectories, which match the common scenarios as outlined on the main landing page for the service. For instance, the Intune "Understand & Explore" articles are in the `Understand` subdirectory, "Deploy & Use" articles are found in the `DeployUse` subdirectory, etc.  
+Within the root of this directory are general articles that relate to the overall service, along with another series of subdirectories, which match the common scenarios as outlined on the main landing page for the service. For instance, the Intune "Understand & Explore" articles are in the `/Understand` subdirectory, "Deploy & Use" articles are found in the `/DeployUse` subdirectory, etc.  
 
 * **Article file names:** Note that file names use the following rules:
     * Contain only lowercase letters, numbers, and hyphens. Windows operating systems are case insensitive, so if you need to rename a file's casing from upper/mixed to lower, you can use the following Git command (use the proper casing as well for both file names) :
@@ -129,7 +128,10 @@ Within the root of this directory are general articles that relate to the overal
 
 For convenience, the root directory of each repository contains a Markdown template file named `template.md`, which can be used as a "starter file" if you need to create a new article for submission to the repository. The file contains various examples of using Markdown to format an article, along with general instructions. 
 
+#### Metadata
 At the top of the file, you'll also see a "metadata" section, which contains various tags used for tracking information relating to the article. Article metadata enables certain functionality, such as author attribution, contributor attribution, breadcrumbs, article descriptions, and SEO optimizations as well as reporting Microsoft uses to evaluate the performance of the content. So the metadata is important! If you're unsure of the values to use for the metadata section, you can leave them blank and they will be reviewed/completed by the pull request reviewer for the repository.
+
+See the [Metadata for docs.microsoft.com articles - TBD](article-metadata.md) article to learn more about the article metadata we require at the top of each article.
 
 ## Get started with fork-based contributions
 
@@ -193,7 +195,6 @@ All of the articles in this repository use [GitHub flavored Markdown](https://he
 - [Create images in Markdown](./ContributorGuide/create-images-markdown.md) for help with using images in Markdown.
 - [Custom markdown extensions used in our technical articles - TBD](./ContributorGuide/custom-markdown-extensions.md) for details on the Markdown extensions we use for custom rendering of Note blocks, videos, etc.
 - [Markdown template for technical articles](template.md) for a template to help you get started when proposing new articles.
-- [Metadata for docs.microsoft.com articles - TBD](article-metadata.md) to learn more about the article metadata we require at the top of each article.
 
 
 This is not an exhaustive list, but here are a few ideas for Markdown editors that you may wish to try:
