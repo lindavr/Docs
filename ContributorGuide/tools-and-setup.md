@@ -109,16 +109,16 @@ To enable 2FA, please see the instructions in the [Securing your account with tw
 
 **Note:** If you are a Microsoft employee, you must enable two factor authentication on your GitHub account, in order to work in the private content repositories.
 
-Then see [Creating an access token for command-line use](https://help.github.com/articles/creating-an-access-token-for-command-line-use/) to create a security token that will be used for authentication when accessing GitHub from command line functions. When you create the token, select all the scopes available in the token-creation UI ([details on each scope](https://developer.github.com/v3/oauth/#scopes))
+After enabling 2FA, see [Creating an access token for command-line use](https://help.github.com/articles/creating-an-access-token-for-command-line-use/) to create a security token that will be used for authentication when accessing GitHub from command line functions. When you create the token, select all the scopes available in the token-creation UI ([details on each scope](https://developer.github.com/v3/oauth/#scopes))
 
 After you enable 2FA, you have to enter the access token instead of your GitHub password at the command prompt when you try to access a GitHub repository from the command line. The access token is not the authentication code that you get in a text message when you set up 2FA. It's a long string that looks something like this:  fdd3b7d3d4f0d2bb2cd3d58dba54bd6bafcd8dee. A few notes about this:
 
 - When you create your access token, save it in a text file in a safe location to make it readily accessible when you need it.
-- Later, when you need to paste the token, know there are multiple ways to paste in the command line:
+- Later, when you need to paste the token, know that there are multiple ways to paste in the command line:
 
-- With focus set to the cursor in the command line window, simultaneously press the Ctrl and "V" keys 
-- Click the icon in the upper left corner of the command line window>Edit>Paste.
- - Right-click the icon in the upper left corner of the window and click Properties>Options>QuickEdit Mode. This configures the command line so you can paste by right-clicking in the command line window.
+  - With focus set to the cursor in the command line window, simultaneously press the Ctrl and "V" keys 
+  - Click the icon in the upper left corner of the command line window>Edit>Paste.
+  - Right-click the icon in the upper left corner of the window and click Properties>Options>QuickEdit Mode. This configures the command line so you can paste by right-clicking in the command line window.
 
 ## Install a markdown editor
 
@@ -134,65 +134,62 @@ We author content using simple "markdown" notation in the files, rather than com
 
 ## Fork the repository and copy it to your computer
 
-1. Create a fork of the repository in GitHub - go to the top-right of the page and click the Fork button. If prompted, select your account as the location where the fork should be created. This creates a copy of the repository within your Git Hub account. Generally speaking, technical writers and program managers need to fork azure-content-pr, the private repo. Community contributors need to fork azure-content, the public repo. You only need to fork one time; after your first setup, if you want to copy your fork to another computer, you only have to run the commands that follow in this section to copy the repo to your computer.  If you choose to create forks of both repositories, you will need to create a fork for each repository.
+1. **Create a fork of the repository in GitHub** - Navigate to the repository's main GitHub page and click the Fork button in the upper right. If prompted, select your GitHub account as the destination where the fork should be created. This creates a copy of the repository within your GitHub account. You only need to fork one time; after your first setup, if you want to copy your fork to another computer, you only have to run the commands that follow in this section to copy the repo to your computer. 
 
-2. Copy the Personal Access Token that you got from [https://github.com/settings/applications#personal-access-tokens](https://github.com/settings/applications#personal-access-tokens). You can accept the default permissions for the token.  Save the Personal Access Token in a text file for later reuse.
+    **Note:** If you are a Microsoft employee, make sure you fork the private version of your repository.
 
-3. Next, copy the repository to your computer with your credentials embedded in the command string.  To do this, open Git Bash and run it as an administrator. At the command prompt, enter the following command.  This command creates a azure-content(-pr) drectory on your computer.  If you're using the default location, it will be at c:\users<your Windows user name>\azure-content(-pr).
+2. **Copy the Personal Access Token** that you got from [https://github.com/settings/tokens](https://github.com/settings/tokens). You can accept the default permissions for the token. Save the Personal Access Token in a text file for later reuse.
+
+3. **Clone a copy of the forked repository to your computer** with your credentials embedded in the Git command string.  To do this, open Git Bash and run it as an administrator. At the command prompt, enter the following command. This command creates a directory on your computer, using the same <repository-name>.  If you're using the default location, it will be stored in c:\users\<your Windows user account>\<repository-name>(-pr).
 
 Public repo:
 
-        git clone https://[your GitHub user name]:[token]@github.com/<your GitHub user name>/azure-content.git
+        git clone https://[your GitHub user name]:[token]@github.com/<your GitHub user name>/<respository-name>.git
 
 Private repo:
 
-        git clone https://[your GitHub user name]:[token]@github.com/<your GitHub user name>/azure-content-pr.git
+        git clone https://[your GitHub user name]:[token]@github.com/<your GitHub user name>/<respository-name>-pr.git
 
 For example, this clone command could look something like this:
 
-        git clone https://smithj:b428654321d613773d423ef2f173ddf4a312345@github.com/smithj/azure-content-pr.git  
+        git clone https://smithj:b428654321d613773d423ef2f173ddf4a312345@github.com/smithj/IntuneDocs-pr.git  
 
 ## Set remote repository connection and configure credentials
 
-Create a reference to the root repository by entering these commands. This sets up connections to the repository in GitHub so that you can get the latest changes onto your local machine and push your changes back to GitHub. This command also configures your token locally so that you don't have to enter your name and password each time you try to access the upstream repo and your fork on GitHub.
+Now lets create a "remote" alias reference to the public/private repository in GitHub called "upstream", so that you can use the alias to refer to that repo anytime you need to access it (ie: to get the latest changes onto your local machine). We will also use a variant of this command to remember your personal access token, so that you don't have to enter your name and password each time you try to access the "upstream" repo. Note that the `clone` command you used above automatically created a "remote" alias to your forked repo, also storing your personal access token, under the name "origin". The `fetch` command will also pull down branch info for the branches in the repo being pointed to by the "upstream" remote, for later use.
 
 Public repo:
 
         cd azure-content
-        git remote add upstream https://[your GitHub user name]:[token]@github.com/Azure/azure-content.git
+        git remote add upstream https://[your GitHub user name]:[token]@github.com/Azure/<respository-name>.git
         git fetch upstream
 
 Private repo:
 
         cd azure-content-pr
-        git remote add upstream https://[your GitHub user name]:[token]@github.com/Azure/azure-content-pr.git
+        git remote add upstream https://[your GitHub user name]:[token]@github.com/Azure/<respository-name>-pr.git
         git fetch upstream
 
-This usually takes a while. After you do this, you won't have to fork again or enter your credentials again. You would only have to copy the forks to a local computer again if you set the tools up on another computer.
+This can sometimes takes a while to complete. 
 
+After you complete this section, you won't have to fork again or enter your credentials again. You would only have to clone the forks to a local computer again if you install Git on another computer.
 
 ## Configure your user name and email locally
 
 To ensure you are listed correctly as a contributor, you need to configure your user name and email locally in Git.
 
-1. Start Git Bash, and switch into azure-content or azure-content-pr:
+1. Start Git Bash, and switch into the <respository-name> directory you just cloned into:
 
-   ````
-   cd azure-content
-   ````
-
- or
-
-   ````
-   cd azure-content-pr
-   ````
+       ````
+    cd <respository-name> 
+       ````
 
 2. Configure your user name so it matches your name as you set it up in your GitHub profile:
 
     ````
     git config --global user.name "John Doe"
     ````
-3. Configure your email so it matches the primary email designated in your GitHub profile; if you're a MSFT employee, it should be your MSFT email address:
+3. Configure your email so it matches the primary email designated in your GitHub profile; if you're a Microsoft employee, it should be your Microsoft email address:
 
     ````
     git config --global user.email "alias@example.com"
