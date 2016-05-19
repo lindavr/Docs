@@ -80,7 +80,7 @@ For the following types of tasks, we strongly recommend you install and learn to
 
 ##Permissions in GitHub
 
-Anybody with a GitHub account can contribute to docs.microsoft.com content through one of our [public repositories][DocsPubRepos]. No special permissions are required, as you have read access to public repositories by default.
+Anyone with a GitHub account can contribute to docs.microsoft.com content through one of our [public repositories][DocsPubRepos]. No special permissions are required, as you have read access to public repositories by default.
 
 **Note:** If you are a Microsoft employee, you must work in one of our private content repositories. First visit [https://opensourcehub.microsoft.com/](https://opensourcehub.microsoft.com/) to join your Github and Microsoft credentials for the GitHub "Microsoft" organization. Then ask a member of your content development team to add you to the appropriate GitHub team for read permissions in your private repository. Once you have read permissions, you will be able to fork the private repository later.
 
@@ -111,7 +111,7 @@ To enable 2FA, please see the instructions in the [Securing your account with tw
 
 After enabling 2FA, see [Creating an access token for command-line use](https://help.github.com/articles/creating-an-access-token-for-command-line-use/) to create a security token that will be used for authentication when accessing GitHub from command line functions. When you create the token, select all the scopes available in the token-creation UI ([details on each scope](https://developer.github.com/v3/oauth/#scopes))
 
-After you enable 2FA, you have to enter the access token instead of your GitHub password at the command prompt when you try to access a GitHub repository from the command line. The access token is not the authentication code that you get in a text message when you set up 2FA. It's a long string that looks something like this:  fdd3b7d3d4f0d2bb2cd3d58dba54bd6bafcd8dee. A few notes about this:
+The access token will be used instead of your GitHub password, whenever you need to access a GitHub repository from the command line. The access token is not the authentication code that you get in a text message when you set up 2FA. It's a long string that looks something like this:  fdd3b7d3d4f0d2bb2cd3d58dba54bd6bafcd8dee. A few notes about this:
 
 - When you create your access token, save it in a text file in a safe location to make it readily accessible when you need it.
 - Later, when you need to paste the token, know that there are multiple ways to paste in the command line:
@@ -122,10 +122,10 @@ After you enable 2FA, you have to enter the access token instead of your GitHub 
 
 ## Install a markdown editor
 
-We author content using simple "markdown" notation in the files, rather than complex "markup" (HTML, XML, etc.). So, you'll need to install a markdown editor.
+Recall that content is authored in a simple "markdown" notation in the files, rather than complex "markup" (HTML, XML, etc.). So, you'll need to install a markdown editor.
 
 - **Atom**: GitHub's Atom Markdown editor: [http://atom.io](http://atom.io). It does not require a license for business use, and has spell check. After installation, you'll also need to set a few things up:
-  - Atom defaults to using 2 spaces for tabs, but Markdown expects 4 spaces. If you leave it at the default of two, your article will look great in local preview, but not when it’s imported into Azure. So, configure Atom to use 4 spaces - you can find this setting under File>Settings>Editor Settings>Tab Length. 
+  - Atom defaults to using 2 spaces for tabs, but Markdown expects 4 spaces. If you leave it at the default of two, your article will look great in local preview, but not when it’s published. So, configure Atom to use 4 spaces - you can find this setting under File>Settings>Editor Settings>Tab Length. 
   - You will probably also want to turn on Soft Wrap in this section too, which does the same as "word wrap" in Notepad. 
   - To turn on the markdown preview, click Packages>Markdown Preview>Toggle Preview. You can use Ctrl-Shift-M to toggle the preview HTML view.
 - **Prose**: This is a lightweight, elegant, on-line, and open source Markdown editor that offers a preview. Visit [http://prose.io](http://prose.io) and authorize Prose in your repository.
@@ -140,7 +140,7 @@ We author content using simple "markdown" notation in the files, rather than com
 
 2. **Copy the Personal Access Token** that you got from [https://github.com/settings/tokens](https://github.com/settings/tokens). You can accept the default permissions for the token. Save the Personal Access Token in a text file for later reuse.
 
-3. **Clone a copy of the forked repository to your computer** with your credentials embedded in the Git command string.  To do this, open Git Bash and run it as an administrator. At the command prompt, enter the following command. This command creates a directory on your computer, using the same <repository-name>.  If you're using the default location, it will be stored in c:\users\<your Windows user account>\<repository-name>(-pr).
+3. **Clone a copy of the forked repository to your computer** with your credentials embedded in the Git `clone` command string.  To do this, open Git Bash and run it as an administrator. At the command prompt, enter the following command, which will create a directory on your computer using the same as specified in `<repository-name>`. If you're using the default location, it will be stored in `c:\users\<your Windows user account>\<repository-name>(-pr)`.
 
 Public repo:
 
@@ -156,18 +156,20 @@ For example, this clone command could look something like this:
 
 ## Set remote repository connection and configure credentials
 
-Now lets create a "remote" alias reference to the public/private repository in GitHub called "upstream", so that you can use the alias to refer to that repo anytime you need to access it (ie: to get the latest changes onto your local machine). We will also use a variant of this command to remember your personal access token, so that you don't have to enter your name and password each time you try to access the "upstream" repo. Note that the `clone` command you used above automatically created a "remote" alias to your forked repo, also storing your personal access token, under the name "origin". The `fetch` command will also pull down branch info for the branches in the repo being pointed to by the "upstream" remote, for later use.
+Now lets create a "remote" alias reference to the public/private repository in GitHub called "upstream", so that you can use the alias to refer to that repo anytime you need to access it (ie: to get the latest changes onto your local machine). 
+
+We will use a variant of this command to remember your personal access token, so that you don't have to enter your name and password each time you try to access the "upstream" repo. Note that the `clone` command you used above automatically created a "remote" alias to your forked repo, also storing your personal access token, under the name "origin". The `fetch` command will also pull down branch info for the branches in the repo being pointed to by the "upstream" remote, for later use.
 
 Public repo:
 
-        cd azure-content
-        git remote add upstream https://[your GitHub user name]:[token]@github.com/Azure/<respository-name>.git
+        cd <respository-name>
+        git remote add upstream https://[your GitHub user name]:[token]@github.com/Microsoft/<respository-name>.git
         git fetch upstream
 
 Private repo:
 
-        cd azure-content-pr
-        git remote add upstream https://[your GitHub user name]:[token]@github.com/Azure/<respository-name>-pr.git
+        cd <respository-name>-pr
+        git remote add upstream https://[your GitHub user name]:[token]@github.com/Microsoft/<respository-name>-pr.git
         git fetch upstream
 
 This can sometimes takes a while to complete. 
@@ -198,7 +200,7 @@ To ensure you are listed correctly as a contributor, you need to configure your 
 
 ## Next steps
 
-- [Create a local working branch](./git-commands-for-master.md) on your computer so you can start work
+- [Create a working branch in your local repo and propose your contributions](./git-commands-for-master.md) 
 - If creating a new article, start with a copy of [the docs.microsoft.com markdown template](../template.md) 
 - Back to [Step-by-step instructions](../readme.md#step-by-step) in main Contributor Guide
 
