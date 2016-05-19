@@ -103,24 +103,21 @@ You can accept all default settings, unless you want different behavior (ie: com
 
 (Note: If you prefer a Graphical User Interface over a Command Line Interface, see [Software Freedom Conservancy's available GUI Clients page](https://git-scm.com/downloads/guis), [GitHub's GitHub Desktop](https://desktop.github.com/), or [Visual Studio Code](https://www.visualstudio.com/products/code-vs.aspx) for some popular options. Please note, however, that this guide is written from the point of view of a CLI user.
 
-## Enable two-factor authentication
+## Enable two-factor authentication (2FA) and create an access token
 
-You have to enable two factor authentication (2FA) on your GitHub account if you are working in the private content repository. It's required in the private repository.
+To enable 2FA, please see the instructions in the [Securing your account with two-factor authentication (2FA)](https://help.github.com/articles/securing-your-account-with-two-factor-authentication-2fa/) GitHub article. 
 
-To enable this, follow the instructions in both the following GitHub help topics:
+**Note:** If you are a Microsoft employee, you must enable two factor authentication on your GitHub account, in order to work in the private content repositories.
 
-- [About Two-Factor Authentication](https://help.github.com/articles/about-two-factor-authentication/)
-- [Creating an access token for command-line use](https://help.github.com/articles/creating-an-access-token-for-command-line-use/)
-
-When you create the token, select all the scopes available in the token-creation UI ([details on each scope](https://developer.github.com/v3/oauth/#scopes))
+Then see [Creating an access token for command-line use](https://help.github.com/articles/creating-an-access-token-for-command-line-use/) to create a security token that will be used for authentication when accessing GitHub from command line functions. When you create the token, select all the scopes available in the token-creation UI ([details on each scope](https://developer.github.com/v3/oauth/#scopes))
 
 After you enable 2FA, you have to enter the access token instead of your GitHub password at the command prompt when you try to access a GitHub repository from the command line. The access token is not the authentication code that you get in a text message when you set up 2FA. It's a long string that looks something like this:  fdd3b7d3d4f0d2bb2cd3d58dba54bd6bafcd8dee. A few notes about this:
 
-- When you create your access token, save it in a text file to make it readily accessible when you need it.
+- When you create your access token, save it in a text file in a safe location to make it readily accessible when you need it.
+- Later, when you need to paste the token, know there are multiple ways to paste in the command line:
 
-- Later, when you need to paste the token, know there are two ways to paste in the command line:
-
- - Click the icon in the upper left corner of the command line window>Edit>Paste.
+- With focus set to the cursor in the command line window, simultaneously press the Ctrl and "V" keys 
+- Click the icon in the upper left corner of the command line window>Edit>Paste.
  - Right-click the icon in the upper left corner of the window and click Properties>Options>QuickEdit Mode. This configures the command line so you can paste by right-clicking in the command line window.
 
 ## Install a markdown editor
