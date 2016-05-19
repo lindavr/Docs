@@ -14,7 +14,7 @@ ms.assetid: A269F1A3-CE8A-4F3F-A8FF-3FB44E276BB9
 
 ---
 
-# Git commands for creating a new article or updating an existing article
+# Git commands for creating/modifying content using your local repository
 
 Follow the steps below to create a local working branch on your computer, which you can use to update or create a new article for docs.microsoft.com.
 
@@ -22,14 +22,14 @@ Follow the steps below to create a local working branch on your computer, which 
 
  **Note:** If you are working in a private repository, add the "-pr" suffix to all commands using a repository name.
 
-2. Switch context to your <repository-name>. Recall that this maps to a local working directory on your computer, under the path `c:\users\user-account\repository-name\` :
+2. Switch context to your `<repository-name>`. Recall that this maps to a local working directory on your computer, under the path `c:\users\user-account\repository-name\` :
 
         cd <repository-name>:
-3. Check out the master branch:
+3. Set the current working branch to the 'master' branch:
 
         git checkout master
 
-4. Pull down the latest changes for the master branch, and create a fresh local working branch derived from the master branch:
+4. Pull down the latest changes for the 'master' branch in the docs.microsoft.com repository, and create a fresh local working branch derived from the master branch:
 
         git pull upstream master:<working-branch>
 
@@ -44,7 +44,7 @@ Follow the steps below to create a local working branch on your computer, which 
 
 7. Create your new article or make changes to an existing article, by creating/modifying files in the local working directory (`c:\users\user-account\repository-name\`). Use Windows Explorer to open and create new markdown files, and use your markdown editor to edit them.
 
-8. Each time you create/modify/delete files in your working directory, you will want to "add" them to the staging area (aka: Index), then "commit" them from your working branch into your persisted copy of your branch :
+8. As you create/modify/delete files in your working directory, you will want to "add" them to the staging area (aka: Index), then "commit" them from your working branch into your persisted copy of your branch, on a regular basis :
 
         git add -A
         git commit –m "<comment>"
@@ -54,7 +54,7 @@ Follow the steps below to create a local working branch on your computer, which 
         git add <file path>
         git commit –m "<comment>"
 
-9. Update your local working branch with changes from upstream (recall `upstream` points to the docs.microsoft.com repository), so you pick up all of the latest changes since your last `pull` :
+9. Update your local working branch with changes from upstream on a regular basis (recall `upstream` points to the docs.microsoft.com repository), so you pick up all of the latest changes since your last `pull` :
 
         git pull upstream master
 
@@ -68,21 +68,21 @@ Follow the steps below to create a local working branch on your computer, which 
 
 14. The pull request reviewer reviews your pull request, provides feedback, and/or merges your pull request. 
 
-15. Optionally verify your published article or changes at the appropriate http://docs.microsoft.com/*path to-your-article-without-the-MD-extension* URL.
+15. Optionally verify your published article or changes at the appropriate `http://docs.microsoft.com/*path to-your-article-without-the-MD-extension*` URL.
 
 ## Publishing
 
-- Articles are published at approximately 10:00 AM and 3:30 PM Pacific Time, Monday-Friday. It can take up to 45 minutes for articles to appear online after publishing. Remember your pull request has to be merged by a pull request reviewer before the changes can be included in the next scheduled publishing run. You need to work with your pull request reviewer ahead of time to ensure a pull request is merged for a specific publishing run. Otherwise, PRs are reviewed in the order they were submitted.
+Articles are published at approximately 10:00 AM and 3:30 PM Pacific Time, Monday-Friday. It can take up to 45 minutes for articles to appear online after publishing. Remember your pull request has to be merged by a pull request reviewer before the changes can be included in the next scheduled publishing run. You need to work with your pull request reviewer ahead of time to ensure a pull request is merged for a specific publishing run. Otherwise, PRs are reviewed in the order they were submitted.
 
-- If you are an employee working in the private repository, all pull requests are subject to validation rules that need to be addressed before the pull request can be merged. 
+If you are an employee working in the private repository, all pull requests are subject to validation rules that need to be addressed before the pull request can be merged. 
 
 ## Working with release branches (Microsoft employees)
 
 If you need to work with a release branch that has been created by the release manager, the best way to create a local working branch from the release branch is to use this command syntax:
 
-    git checkout upstream/<upstream branch name> -b <local working branch name>
+    git checkout upstream/<release-branch-name> -b <local-working-branch-name>
 
-This creates the local branch directly from the upstream branch, avoiding any local merging. The instructions for creating/updating/deleting content, pushing back to your fork, open a Pull Request, etc., are the same as the instructions above for 'master' branch contributions, just use the release branch naming convention instead. When the release is ready, the release manager will merge the release branch into 'master'.
+This creates the local branch directly from the upstream branch, avoiding any local merging. The instructions for creating/updating/deleting content, pushing back to your fork, opening a Pull Request, etc., are the same as the instructions above for 'master' branch contributions, just use the release branch naming convention instead. When the release is ready, the release manager will merge the release branch into 'master'.
 
 ## Next steps
 
