@@ -21,11 +21,11 @@ Thank you for your interest in [docs.microsoft.com](https://docs.microsoft.com/)
 This is the main page of the Contributor Guide, which is broken into the following sections:
 
 * **[How to contribute](#how-to-contribute)** - covers the various ways you can contribute, not only to the content, but to the larger communities that use services and features covered by docs.microsoft.com content.
-* **[Contributing via Pull Request](#contributing-via-pull-request)** - since the Pull Request mechanism is a primary way in which all content contributions are made, this section provides a brief overview of the process, and a summary of the two ways in which you can contribute via a Pull Request:
-  * Using GitHub's built-in Web based editor, for small contributions such as corrections
-  * Using GitHub's repository forking mechanism, for all other contributions. This is also the method that the remainder of the guide will be focused on.
+* **[Contributing via Pull Request](#contributing-via-pull-request)** - since the Pull Request mechanism is a primary way in which all content contributions are made, this section provides a brief overview of the process, along with basic definitions of some of the terminology we will be using going forward. It also contains a summary of the two ways in which you can originate a Pull Request:
+  * Using GitHub's built-in editor to make small contributions, such as corrections
+  * Making changes using a local repository, then push them up to GitHub. 
 * **[Repository organization](#repository-organization)** - provides an overview of the available docs.microsoft.com repositories to which you can contribute, and the associated directory/file structure and format.
-* **[Get started with fork-based contributions](#get-started-with-fork-based-contributions)** - provides the additional depth you will need go get started with the GitHub fork method for contributions. There is both a QuickStart path for folks with GitHub experience, and a longer more detailed path if you're starting from scratch.
+* **[Get started using a local repository](#get-started-using-a-local-repository)** - provides the additional depth you will need to get started in using a local repository for contributions. There is both a QuickStart path for folks with GitHub experience, and a longer more detailed path if you're starting from scratch.
 
 ## How to contribute
 
@@ -37,8 +37,7 @@ You can contribute to docs.microsoft.com content and community in a few differen
 * **Participate in community discussion**, such as a [Microsoft forum][Forum-MSDN-Main] or [Stack Overflow][Forum-SO-Main] discussion. See the [Repository organization](#repository-organization) section below for service-specific examples.
 * **Submit a Pull Request**, which contains your suggested changes to the actual content, targeting content in one of the docs.microsoft.com GitHub repositories. See the [Repository organization](#repository-organization) section below for the list of repositories.
 
-The remainder of this article is devoted to the last option, and provides additional detail on how you can use the GitHub Pull Request feature to make contributions. 
-
+The remainder of this article is devoted to the last option, providing additional detail on how you can use the GitHub Pull Request feature to make contributions. 
 ## Contributing via Pull Request
 
 GitHub is a hosting service for Git repositories, which is where docs.microsoft.com content is stored. A Git *repository* (aka: *repo*) is a conceptual container for one or more branches. A *branch* contains the actual folders/files that make up the set of content for a project. Branches and can also be used for versioning, with the 'master' branch serving as the main plan-of-record for the project.
@@ -61,18 +60,20 @@ Both of these will allow you to navigate directly into the GitHub page that serv
 
 ![GitHub profile example](./ContributorGuide/media/tools-and-setup/editicon.png) 
 
-From here, you can specify your changes using the GitHub file editor. Although we prefer you fork the repository and use client-side tools, if you really need to create new files or upload existing files, see: 
+From here, you can specify your changes using the GitHub file editor. Although we prefer you use client-side tools, if you really need to create new files or upload existing files, see: 
 
 - [Creating files on Github](https://github.com/blog/1327-creating-files-on-github)
 - [Upload files to your repositories](https://github.com/blog/2105-upload-files-to-your-repositories)
 
-When you're finished, scroll to the bottom of the page where you can "Propose file change", which is the default option when you have read access to the repository. Users with read access will then be directed to a working branch in their own fork of the repository (which GitHub will also create for you if it does not already exist), and be presented with a "Create pull request" page to create a new entry in the repo's Pull Request queue. For more information on the entire workflow, see the [Editing files in another user's repository](https://help.github.com/articles/editing-files-in-another-user-s-repository/) GitHub article.
+When you're finished, scroll to the bottom of the page where you can "Propose file change", which is the default option when you have read access to the repository. Users with read access will then be directed to a working branch in their own fork of the repository (GitHub will automatically create both the fork and branch for you, if either/both do not already exist), and be presented with a "Create pull request" page to create a new entry in the repo's Pull Request queue. For more information on the entire workflow, see the [Editing files in another user's repository](https://help.github.com/articles/editing-files-in-another-user-s-repository/) GitHub article.
 
 **Note**: the workflow is slightly different when you have write permissions to a repository. For more information, see the [Editing files in your repository](https://help.github.com/articles/editing-files-in-your-repository/) GitHub article.
 
-#### Large submissions: using a GitHub fork
+#### Large submissions: creating your own local repository
 
-If you are making substantial changes to an existing article, adding or changing images, or contributing a new article, you will need to use the GitHub fork feature. A *fork* is a replica of the main repository, which provides you with a working copy which you can use in isolation. If you're not already familiar with making Github contributions, you will also need to install a local Git tool such as Git Bash, a Markdown editor, and learn some Git commands. The [Get started with fork-based contributions](#get-started-with-fork-based-contributions) section will have more details on this.
+If you are making substantial changes to an existing article, adding or changing images, or contributing a new article, you will need to manually create your GitHub fork, then clone the fork down to your local computer. A *fork* is a GitHub-based replica of the main repository, under your GitHub account, which provides you with a working copy which you can use in isolation. It is from your fork that you will create Pull Requests, which will target a docs.microsoft.com repository. Similarly, a *clone* is a local based replica of repository which, in this case, will be a clone of your fork. The clone allows you to work on Git repositories offline, and using more powerful native software/tools.
+
+If you're not already familiar with making Github contributions, you will also need to install a local Git tool such as Git Bash, a Markdown editor, and learn some Git commands. The [Get started using a local repository](#get-started-using-a-local-repository) section will have more details on this. This may seem confusing if you've never used Git or Github, but after a few weeks of usage, it will become second nature.
 
 **Note**: Microsoft employees that own (or are regular contributors to) docs.microsoft.com content, are expected to use a fork of the private repo where their content resides. 
 
@@ -135,14 +136,12 @@ For convenience, the root directory of each repository contains a Markdown templ
 -  examples of **embedding video** using an iframe
 -  general **instructions on the use of docs.microsoft.com extensions**, which can be used for special controls such as buttons and selectors
 
-## Get started with fork-based contributions
+## Get started using a local repository
 
-As mentioned earlier, if you are making large contributions or are a Microsoft employee, you will need to make your contributions via a GitHub fork. 
-
-If you're familiar with Git, you may want to just jump to the [Quickstart](#quickstart) section below. If you're unfamiliar with Git, you may want to review some of the resources provided in the [Resources](#resources) section below before beginning, then begin at the [Step-by-step](#step-by-step) section.
+As mentioned earlier, if you are making large contributions or are a Microsoft employee, you will need to make your contributions via a GitHub fork. If you're familiar with Git, you may want to just jump to the [Quickstart](#quickstart) section below. If you're unfamiliar with Git, you may want to review some of the resources provided in the [Resources](#resources) section below before beginning, then begin at the [Step-by-step](#step-by-step) section.
 
 #### Quickstart
-Once you've configured your GitHub account, installed a client Git tool (such as [Git Bash](https://git-scm.com/downloads)), and created your own fork of the repository, you can use the following general steps to start contributing to the repo:
+Once you've configured your GitHub account, installed a client Git tool (such as [Git Bash](https://git-scm.com/downloads)), and created your own fork of the repository you will be contributing to, you can use the following general steps to create a pull request that contains your proposed contributions:
 
 1. Clone your forked repository
 

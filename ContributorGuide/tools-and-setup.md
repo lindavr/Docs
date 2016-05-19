@@ -209,7 +209,7 @@ To ensure you are listed correctly as a contributor, you need to configure your 
 ##Next steps
 
 - [Create a local working branch](./git-commands-for-master.md) on your computer so you can start work.
-- Copy [the markdown template](../markdown templates/markdown-template-for-new-articles.md) as the basis for a new article.
+- Copy [the markdown template](../template.md) as the basis for a new article.
 
 
 ###Contributors' Guide Links
