@@ -86,9 +86,9 @@ Anybody with a GitHub account can contribute to docs.microsoft.com content throu
 
 ## Install Git for Windows
 
-Install Git for Windows from [http://git-scm.com/download/win](http://git-scm.com/download/win). This download installs the Git version control system, and it installs Git Bash, the command-line app that you will use to interact with your local Git repository.
+Install Software Freedom Conservancy's Git for Windows implementation from [http://git-scm.com/download/win](http://git-scm.com/download/win). This download installs the Git version control system, including Git Bash, the command-line app that you will use to interact with your local Git repository.
 
-You can accept all default settings, unless you want different behavior (ie: commands Git commands are available within the Windows command line, for instance)
+You can accept all default settings, unless you want different behavior (ie: commands Git commands are available within the Windows command line, for instance):
 
 <p align="center">
  ![GitHub profile example](./media/tools-and-setup/gitbashinstall-282-1.png)
@@ -101,7 +101,7 @@ You can accept all default settings, unless you want different behavior (ie: com
 <p align="center">
  ![GitHub profile example](./media/tools-and-setup/gitbashinstall-282-5.png)
 
-(Note: If you prefer a Graphical User Interface over a Command Line Interface, see [Free Software Foundation's available GUI Clients](https://git-scm.com/downloads/guis), [GitHub's GitHub Desktop](https://desktop.github.com/), or [Visual Studio Code](https://www.visualstudio.com/products/code-vs.aspx)for some popular options. Please note, however, that this guide is written from the point of view of a CLI user.
+(Note: If you prefer a Graphical User Interface over a Command Line Interface, see [Software Freedom Conservancy's available GUI Clients page](https://git-scm.com/downloads/guis), [GitHub's GitHub Desktop](https://desktop.github.com/), or [Visual Studio Code](https://www.visualstudio.com/products/code-vs.aspx) for some popular options. Please note, however, that this guide is written from the point of view of a CLI user.
 
 ## Enable two-factor authentication
 

@@ -176,7 +176,7 @@ When you're ready to embark on creating a local repository and submitting a Pull
   * Another good beginner course can be found on [Code School](https://www.codeschool.com/courses/try-git). 
   * GitHub also has a great [Resources for learning Git and Github page](https://help.github.com/articles/good-resources-for-learning-git-and-github/), which includes several tutorials/primers, cheat sheets, and video resources.
   * The free [Pro Git e-book](http://git-scm.com/book/en/v2) provides excellent depth if you are new to Git, and also serves as a good reference
-* As mentioned, we recommend and primarily use the Git Bash command line environment for proposing larger contributions via a personal fork of a repository. When you're ready to install the tools, check out the [Git Bash downloads page](https://git-scm.com/downloads) for the available Git Bash downloads by platform.
+* As mentioned, we recommend and primarily use the Git Bash command line environment for proposing larger contributions via a personal fork of a repository. When you're ready to install the tools, check out [Software Freedom Conservancy's Git download page](https://git-scm.com/downloads) for the available Git implementations by platform.
 * As you become more familiar with Git and GitHub, the following articles may be helpful:
   * - [How to undo almost anything with Git (GitHub blog)](https://github.com/blog/2019-how-to-undo-almost-anything-with-git)
 
