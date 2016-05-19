@@ -126,12 +126,14 @@ Within the root of this directory are general articles that relate to the overal
 
 #### Markdown file template
 
-For convenience, the root directory of each repository contains a Markdown template file named `template.md`, which can be used as a "starter file" if you need to create a new article for submission to the repository. The file contains various examples of using Markdown to format an article, along with general instructions. 
+For convenience, the root directory of each repository contains a Markdown template file named `template.md`, which can be used as a "starter file" if you need to create a new article for submission to the repository. The file contains:
 
-#### Metadata
-At the top of the file, you'll also see a "metadata" section, which contains various tags used for tracking information relating to the article. Article metadata enables certain functionality, such as author attribution, contributor attribution, breadcrumbs, article descriptions, and SEO optimizations as well as reporting Microsoft uses to evaluate the performance of the content. So the metadata is important! If you're unsure of the values to use for the metadata section, you can leave them blank and they will be reviewed/completed by the pull request reviewer for the repository.
-
-See the [Metadata for docs.microsoft.com articles - TBD](article-metadata.md) article to learn more about the article metadata we require at the top of each article.
+- a **metadata header** at the top of the file, delineated by 2, 3-hyphen lines, and containing the various tags used for tracking information relating to the article. Article metadata enables certain functionality, such as author attribution, contributor attribution, breadcrumbs, article descriptions, and SEO optimizations as well as reporting Microsoft uses to evaluate the performance of the content. So the metadata is important!
+- a **"Metadata" section** that describes the various metadata tags and values. If you're unsure of the values to use for the metadata section, you can leave them blank, or comment them with a leading hashtag (#) and they will be reviewed/completed by the pull request reviewer for the repository.
+-  various **examples of using Markdown** to format the elements of an artice article
+-  general **instructions on the use of Markdown extensions**, which can be used for various types of alerts
+-  examples of **embedding video** using an iframe
+-  general **instructions on the use of docs.microsoft.com extensions**, which can be used for special controls such as buttons and selectors
 
 ## Get started with fork-based contributions
 
