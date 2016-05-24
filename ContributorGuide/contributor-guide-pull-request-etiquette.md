@@ -58,7 +58,6 @@ You can help make the pull request queue work better by following these best pra
 
 - If you are trying to coordinate updates made by others out-of-band with changes you are making, which are interdependent, you must coordinate that work ahead of time with your PR reviewer. Otherwise, you risk having a lot of broken links.
 
-<!-- Disabled until we have PRMerger/PRAT enabled in OPS repos
 ## In a hurry? Submit PRs that can be accepted automatically
 
 Use the PRMerger automation rules to get more of your day-to-day PRs merged automatically.
@@ -77,7 +76,6 @@ Take your cue from the PRMerger automation rules above, and do the following:
 * Submit articles with light changes together in a PR with 10 or fewer files.
 * Create a separate PR for articles in which images or selectors change. This requires human review.
 * Create a separate PR for new or deleted articles. This requires human review.
---> 
 
 ## Next steps
 
