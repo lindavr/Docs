@@ -136,12 +136,12 @@ For convenience, the root directory of each repository contains a Markdown templ
 
 ## Get started using a local repository
 
-As mentioned earlier, if you are making large contributions or are a Microsoft employee, you need to create your own fork of the docs.microsoft.com repository, and clone it to your computer, creating your own local repository. If you're familiar with Git, you may want to just jump to the [Quickstart](#quickstart) section below. If you're unfamiliar with Git, you may want to review some of the resources provided in the [Resources](#resources) section below before beginning, then begin at the [Step-by-step](#step-by-step) section.
+As mentioned earlier, if you are making large contributions or are a Microsoft employee, you need to create your own fork of the respective docs.microsoft.com repository, and clone it to your computer, creating your own local repository. If you're familiar with Git, you may want to just jump to the [Quickstart](#quickstart) section below. If you're unfamiliar with Git, you may want to review some of the resources provided in the [Resources](#resources) section below before beginning, then begin at the [Step-by-step](#step-by-step) section.
 
 #### Quickstart
-Once you've configured your GitHub account, installed a client Git tool (such as [Git Bash](https://git-scm.com/downloads)), and created your own fork of the repository you will be contributing to, you can use the following general steps to create a pull request that contains your proposed contributions:
+If you've already configured your GitHub account, installed a client Git tool (such as [Git Bash](https://git-scm.com/downloads)), and created your own fork of the repository you will be contributing to (using the table above), you can use the following general steps to create a pull request that contains your proposed contributions:
 
-1. Clone your forked repository
+1. Clone your forked repository into a local repository
 
         git clone https://github.com/<account-name>/<docs-repository-name>.git
 
@@ -154,7 +154,7 @@ Once you've configured your GitHub account, installed a client Git tool (such as
         git push origin <branch-name> 
           
 5. Return to your GitHub fork and create a pull request, requesting that the commits on your working branch be pulled into the "master" branch of the repository you originally forked.
-6. Your content will be automatically published once the pull request is reviewed and merged.
+6. Your content will be automatically published once the pull request is reviewed and merged. Note: you should also create an "upstream" remote to the production Docs repository from which you forked, which will allow you to keep your local repository in sync.
 
 #### Step-by-step
 
