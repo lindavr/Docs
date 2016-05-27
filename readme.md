@@ -60,7 +60,7 @@ Both of these will allow you to navigate directly into the GitHub page that serv
 
 ![GitHub profile example](./ContributorGuide/media/tools-and-setup/editicon.png) 
 
-From here, you can specify your changes using the GitHub file editor. However, we prefer you use client-side tools, if you really need to create new files or upload existing files, see: 
+From here, you can specify your changes using the GitHub file editor. If you need to create/upload new files, we prefer you follow the instructions in the [Large submissions section](#large-submissions-creating-your-own-local-repository). However, if you really need to, it's also possible to do via the GitHub UI : 
 
 - [Creating files on Github](https://github.com/blog/1327-creating-files-on-github)
 - [Upload files to your repositories](https://github.com/blog/2105-upload-files-to-your-repositories)
