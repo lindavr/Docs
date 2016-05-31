@@ -138,7 +138,7 @@ Recall that content is authored in a simple "markdown" notation in the files, ra
 
     **Note:** See the [Repository Organization](https://github.com/BryanLa/Docs/blob/master/readme.md#repository-organization) section of the main Contributor Guide page for the list of public repositories. If you are a Microsoft employee, make sure you fork the private version of your repository.
 
-![GitHub profile example](./media/tools-and-setup/fork.png)
+    ![GitHub profile example](./media/tools-and-setup/fork.png)
 
 2. **Copy the Personal Access Token** that you got from [https://github.com/settings/tokens](https://github.com/settings/tokens). You can accept the default permissions for the token. Save the Personal Access Token in a text file for later reuse.
 
