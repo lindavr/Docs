@@ -136,7 +136,7 @@ Recall that content is authored in a simple "markdown" notation in the files, ra
 
 1. **Create a fork of the repository in GitHub** - Navigate to the repository's main GitHub page and click the Fork button in the upper right. If prompted, select your GitHub account as the destination where the fork should be created. This creates a copy of the repository within your GitHub account. You only need to fork one time; after your first setup, if you want to copy your fork to another computer, you only have to run the commands that follow in this section to "clone" the repo to the other computer. 
 
-    **Note:** If you are a Microsoft employee, make sure you fork the private version of your repository.
+    **Note:** See the [Repository Organization](https://github.com/BryanLa/Docs/blob/master/readme.md#repository-organization) section of the main Contributor Guide page for the list of public repositories. If you are a Microsoft employee, make sure you fork the private version of your repository.
 
 ![GitHub profile example](./media/tools-and-setup/fork.png)
 
