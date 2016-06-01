@@ -79,7 +79,7 @@ If you're not already familiar with making Github contributions, you will also n
 
 * If you submit a pull request with new files or significant changes to documentation or code samples, we may also need to correspond with you in the pull request, asking you to submit an online Contribution License Agreement (CLA).
 * Minor corrections or clarifications you submit for documentation and code examples in the repository are covered by the [Microsoft Terms of Use (ToU)](https://www.microsoft.com/en-us/legal/intellectualproperty/copyright/default.aspx).
-* If you are a Microsoft employee, please always make your contributions via a fork, and use the internal repository that hosts your content. This will ensure your contributions run through the build process, providing validation and affording you a staging environment for evaluating/testing your changes.
+* **If you are a Microsoft employee**, please always make your contributions via a fork, and use the **internal repository** that hosts your content. This will ensure your contributions run through the build process, providing validation and affording you a staging environment for evaluating/testing your changes.
 *  See the [Resources](#resources) section below for more information on Git concepts such as repositories, forks, branches, pull requests, etc.  
 
 ## Repository organization
@@ -98,6 +98,8 @@ The content published to docs.microsoft.com is partitioned into several public G
 |     | [Azure RemoteApp][EM-RemoteApp-Land] | [Azure/Azure-Content][EM-RemoteApp-Repo] | [MSDN][Forum-MSDN-RemoteApp], [Stack Overflow][Forum-SO-RemoteApp] |
 
 The content in each repository is loosely aligned with the organization of the articles on the corresponding [https://docs.microsoft.com/](https://docs.microsoft.com/) landing pages. A series of subdirectories are used for separation of usage scenarios/stages (ie: Understand & Explore, Deploy & Use, etc), along with media content (ie: image files) and include files (Markdown files that are reused across multiple main articles).
+
+[TODO] **If you are a Microsoft employee**, please work with a member of your content development team to ensure you are using the **internal repository** that hosts your content. This will be covered in more detail later, in the [Tools and Setup] section of the (..ContributorGuide/tools-and-setup.md#permissions-in-github) for details.
 
 #### Main articles directory
 
