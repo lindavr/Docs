@@ -99,7 +99,7 @@ The content published to docs.microsoft.com is partitioned into several public G
 
 The content in each repository is loosely aligned with the organization of the articles on the corresponding [https://docs.microsoft.com/](https://docs.microsoft.com/) landing pages. A series of subdirectories are used for separation of usage scenarios/stages (ie: Understand & Explore, Deploy & Use, etc), along with media content (ie: image files) and include files (Markdown files that are reused across multiple main articles).
 
-[TODO] **If you are a Microsoft employee**, please work with a member of your content development team to ensure you are using the **internal repository** that hosts your content. This will be covered in more detail later, in the [Tools and Setup] section of the (..ContributorGuide/tools-and-setup.md#permissions-in-github) for details.
+**If you are a Microsoft employee**, please work with a member of your content development team to ensure you are using the **internal repository** that hosts your content. This will be covered in more detail later, in the [Tools and Setup]  (..ContributorGuide/tools-and-setup.md#permissions-in-github) section.
 
 #### Main articles directory
 
