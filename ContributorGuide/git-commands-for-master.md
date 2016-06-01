@@ -76,7 +76,13 @@ Articles are published at approximately 10:00 AM and 3:30 PM Pacific Time, Monda
 
 If you are an employee working in the private repository, all pull requests are subject to validation rules that need to be addressed before the pull request can be merged. 
 
-## Working with release branches (Microsoft employees)
+## Additional instructions for Microsoft employees
+
+### Local build and validation
+
+If you need to work offline and cannot use Github based validation and staging, please see the [Resources section on the main page](../readme.md#resources) for instructions on using local build validation and preview.
+
+### Working with release branches 
 
 If you need to work with a release branch that has been created by the release manager, the best way to create a local working branch from the release branch is to use this command syntax:
 
