@@ -26,6 +26,7 @@ This is the main page of the Contributor Guide, which is broken into the followi
   * Making changes using a local repository, then pushing them up to GitHub. 
 * **[Repository organization](#repository-organization)** - provides an overview of the available docs.microsoft.com repositories to which you can contribute, and the associated directory/file structure and format.
 * **[Get started using a local repository](#get-started-using-a-local-repository)** - provides the additional depth you will need to get started in using a local repository for contributions. There is both a QuickStart path for folks with GitHub experience, and a longer more detailed path if you're starting from scratch.
+* **[Helpful Resources](#resources)** - helpful resources for ramping up
 
 ## How to contribute
 
@@ -200,6 +201,9 @@ This is not an exhaustive list, but here are a few ideas for Markdown editors th
 - **[Visual Studio Code](https://www.visualstudio.com/products/code-vs.aspx)** - A lightweight but powerful source code editor which runs on your desktop and is available for Windows, OS X and Linux. 
 - **Notepad**: You can use Notepad for a very lightweight option.
 
+Internal resources for Microsoft employees
+- [Local build and preview instructions][OPS-Local-Build-Preview]
+
 <!---- Reference links for Docs landing pages, associated GitHub repositories, and related Forums matrix. ------------------>
 <!---- PLEASE INSERT URLS IN ASCENDING SORT ORDER, AND REMOVE LOCALE SEGMENT FROM URLS (ie: en-us) FOR LOCALIZED FORUMS! -->
 [EM-ATA-Land]: https://docs.microsoft.com/advanced-threat-analytics/
@@ -235,4 +239,6 @@ This is not an exhaustive list, but here are a few ideas for Markdown editors th
 [Forum-SO-MFA]: http://stackoverflow.com/search?q=%5Bazure%5D+multi-factor
 [Forum-SO-MIM]: http://stackoverflow.com/search?q=Microsoft+Identity+Manager
 [Forum-SO-RemoteApp]: http://stackoverflow.com/questions/tagged/remoteapp
+
+[OPS-Local-Build-Preview]: https://ppe.msdn.microsoft.com/openpublishing/docs/partnerdocs/local-build-and-preview?branch=live
 
