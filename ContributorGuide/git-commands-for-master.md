@@ -16,7 +16,9 @@ ms.assetid: A269F1A3-CE8A-4F3F-A8FF-3FB44E276BB9
 
 # Git commands for creating/modifying content using your local repository
 
-Follow the steps below to create a local working branch on your computer, which you can use to update or create a new article for docs.microsoft.com.
+Follow the steps below to create a local working branch on your computer, which you can use to update or create a new article for docs.microsoft.com. 
+
+**Note:** you must complete the steps outlined in the [tools installation and setup](tools-and-setup.md) article first before proceeding, if you have not already.
 
 1. Start Git Bash (or the command line tool you use for Git).
 
