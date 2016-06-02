@@ -18,7 +18,7 @@ ms.assetid: 8DA854BA-915B-429A-A19B-F2C1533AB947
 
 This guidance is for SMEs who are listed as the author of an article that needs to be retired from docs.microsoft.com. The steps also apply if an article's file name is renamed.
 
-If you're a member of the docs.microsoft.com community and you think an article should be retired for any reason, please leave a comment in the Disqus comment stream for the article to let the author know something is wrong with the article.
+If you're a member of the docs.microsoft.com community and you think an article should be retired for any reason, please leave a comment in the Livefyre comment stream for the article to let the author know something is wrong with the article.
 
 SME authors need to follow several steps to gracefully retire content so users of the website don't have a bad experience when we retire content from the site. Deleting the article or changing its name should be the last thing that happens!
 
@@ -62,11 +62,11 @@ Check the FWLink tool for any FWLinks that might point to the article. Point any
 
 After you've completed the prior steps and those changes are live, you can delete the article from the repository. 
 
-**Important:** When you delete files, you must use the `git add -A` command.
+**Important:** When you delete files, you must use the `git add -A` command and a git commit to push the delete action up to the repo.
 
-## Step 6: Remove any links from MSDN articles (required)
+## Step 6: Remove any links from MSDN articles (required) <query> is this also true for TechNet? I would assume so...
 
-Review the content QA tool for broken links to the retired or renamed topic and remove/fix the links in all MSDN topics affected.
+Review the content QA tool for broken links to the retired or renamed topic and remove/fix the links in all MSDN topics affected. <query> What is the content QA tool?
 
 ## Step 7: Remove cached pages from search engines (only if absolutely necessary)
 
